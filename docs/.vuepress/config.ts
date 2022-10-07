@@ -16,8 +16,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: "日常bb",
-            description: '一些技术，一些随想，一些资源收藏。',
+            title: "极速cv",
+            description: 'CV操作好，下班就是早。',
         }
     },
     // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -28,23 +28,23 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         nav: [
             {text: '首页', link: '/'},
             {
-                text: '文章',
+                text: '编程基础',
                 link: '/article/'
             },
             {
-                text: '笔记',
+                text: '语言',
                 link: '/note/'
             },
             {
-                text: '冥思',
+                text: '编程思想',
                 link: '/idea/'
             },
             {
-                text: '其他',
+                text: '系统平台',
                 link: '/other/'
             },
             {
-                text: '收藏',
+                text: '工具软实力',
                 link: '/favorites/'
             },
             {
@@ -59,7 +59,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.png', // 导航栏logo
-        repo: 'rcbb-cc', // 导航栏右侧生成Github链接
+        repo: 'fastcv-cc', // 导航栏右侧生成Github链接
         searchMaxSuggestions: 10, // 搜索结果显示最大数
         lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
         docsDir: 'docs', // 编辑的文件夹
@@ -124,15 +124,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
         // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
         author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-            name: 'rcbb', // 必需
-            link: 'https://rcbb.cc/' // 可选的
+            name: 'fastcv', // 必需
+            link: 'https://fastcv.cc/' // 可选的
         },
 
         // 博主信息 (显示在首页侧边栏)
         blogger: {
-            avatar: 'https://rcbb-public.oss-cn-guangzhou.aliyuncs.com/avatar.jpg',
-            name: '日常bb',
-            slogan: '积跬步以至千里~'
+            avatar: '/img/logo.png',
+            name: '极速cv',
+            slogan: 'CV操作就是好~'
         },
 
         // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -156,7 +156,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // 页脚信息
         footer: { // 页脚信息
             createYear: 2021, // 博客创建年份
-            copyrightInfo: '日常bb | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">鄂ICP备17023998号</a> ', // 博客版权信息，支持a标签
+            copyrightInfo: '极速cv | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">粤ICP备2022111699号-1</a> ', // 博客版权信息，支持a标签
         },
 
         // 自定义hmtl(广告)模块
@@ -172,7 +172,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         //     href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
         // }], //favicons，资源放在public文件夹
 
-        ['meta', {name: 'keywords', content: '后端技术,rcbb,个人博客'}],
+        ['meta', {name: 'keywords', content: 'cv,fastcv,个人博客'}],
         ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
         ['script', {
@@ -268,9 +268,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 options: {
                     clientID: '7fa39bf189d19a263326',
                     clientSecret: 'f6a0f93f4daf93003c712317c540993517512fd3',
-                    repo: 'rcbb-blog', // GitHub 仓库
-                    owner: 'rcbb-cc', // GitHub仓库所有者
-                    admin: ['rcbb-cc'], // 对仓库有写权限的人
+                    repo: 'fastcv-blog', // GitHub 仓库
+                    owner: 'fastcv-cc', // GitHub仓库所有者
+                    admin: ['fastcv-cc'], // 对仓库有写权限的人
                     // distractionFreeMode: true,
                     pagerDirection: 'last', // 'first'正序 | 'last'倒序
                     id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
@@ -292,7 +292,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         [
             'sitemap',
             {
-                hostname: 'https://rcbb.cc'
+                hostname: 'https://fastcv.cc'
             }
         ]
     ],

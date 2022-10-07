@@ -1,12 +1,12 @@
 {
-  "name": "rcbb-blog",
+  "name": "fastcv-blog",
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://rcbb.cc && bash baiduPush.sh",
+    "baiduPush": "node utils/baiduPush.js https://fastcv.cc && bash baiduPush.sh",
     "publish": "cd theme-vdoing && npm publish && cd ../ && npm uninstall vuepress-theme-vdoing && npm i vuepress-theme-vdoing -D"
   },
   "license": "MIT",

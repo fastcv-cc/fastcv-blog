@@ -61,10 +61,10 @@ jobs:
           port: ${{ secrets.BLOG_PORT }}
           key: ${{ secrets.BLOG_SSH_PRIVATE_KEY }}
           script: | # 1.删除目录；2：创建目录；3：cd进入release目录；4：将release.tar解压到指定目录；
-            rm -rf /apps/www/rcbb.cc
-            mkdir -p /apps/www/rcbb.cc
+            rm -rf /apps/www/fastcv.cc
+            mkdir -p /apps/www/fastcv.cc
             cd /apps/www/release
-            tar -zxvf release.tgz -C /apps/www/rcbb.cc
+            tar -zxvf release.tgz -C /apps/www/fastcv.cc
 #      - name: 'Send mail'
 #        uses: dawidd6/action-send-mail@master
 #        with:
@@ -72,8 +72,8 @@ jobs:
 #          server_port: 465
 #          username: ${{ secrets.MAILUSERNAME }}
 #          password: ${{ secrets.MAILPASSWORD }}
-#          subject: rcbb-blog推送完成
-#          body: rcbb-blog推送完成
+#          subject: fastcv-blog推送完成
+#          body: fastcv-blog推送完成
 #          to: ${{ secrets.TOMAILUSERNAME }}
 #          from: GitHub Actions
 #          content_type: text/html

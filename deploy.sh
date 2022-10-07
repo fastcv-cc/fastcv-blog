@@ -7,15 +7,15 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'rcbb.cc' >CNAME
+echo 'fastcv.cc' >CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:rcbb-cc/rcbb-blog.git
 else
   msg='来自github action的自动部署'
-  githubUrl=https://rcbb-cc:${GITHUB_TOKEN}@github.com/rcbb-cc/rcbb-blog.git
-  git config --global user.name "rcbb.cc"
-  git config --global user.email "www.rcbb.cc@gmail.com"
+  githubUrl=https://fastcv-cc:${GITHUB_TOKEN}@github.com/fastcv-cc/fastcv-blog.git
+  git config --global user.name "fastcv.cc"
+  git config --global user.email "www.fastcv.cc@gmail.com"
 fi
 git init
 git add -A
