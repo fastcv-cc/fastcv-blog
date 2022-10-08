@@ -14,7 +14,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github action的自动部署'
 #  https://github.com/CatCatBug/fastcv-blog.git
-  githubUrl=https://fastcv-cc:${GITHUB_TOKEN}@github.com/fastcv-cc/fastcv-blog.git
+  githubUrl=https://CatCatBug:${GITHUB_TOKEN}@github.com/fastcv-cc/fastcv-blog.git
   git config --global user.name "fastcv.cc"
   git config --global user.email "www.fastcv.cc@gmail.com"
 fi
