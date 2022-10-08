@@ -10,9 +10,10 @@ cd docs/.vuepress/dist
 echo 'fastcv.cc' >CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:rcbb-cc/rcbb-blog.git
+  githubUrl=git@github.com:CatCatBug/fastcv-blog.git
 else
   msg='来自github action的自动部署'
+#  https://github.com/CatCatBug/fastcv-blog.git
   githubUrl=https://fastcv-cc:${GITHUB_TOKEN}@github.com/fastcv-cc/fastcv-blog.git
   git config --global user.name "fastcv.cc"
   git config --global user.email "www.fastcv.cc@gmail.com"
