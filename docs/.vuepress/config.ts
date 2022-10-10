@@ -32,34 +32,34 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: '/article/'
             },
             {
-                text: '语言',
+                text: 'Android',
                 link: '/note/'
             },
             {
-                text: '编程思想',
+                text: 'iOS',
                 link: '/idea/'
             },
             {
-                text: '系统平台',
+                text: '前端',
                 link: '/other/'
             },
             {
-                text: '工具软实力',
+                text: '软实力',
                 link: '/favorites/'
             },
-            {
-                text: '索引',
-                link: '/archives/',
-                items: [
-                    {text: '分类', link: '/categories/'},
-                    {text: '标签', link: '/tags/'},
-                    {text: '归档', link: '/archives/'}
-                ]
-            }
+            // {
+            //     text: '索引',
+            //     link: '/archives/',
+            //     items: [
+            //         {text: '分类', link: '/categories/'},
+            //         {text: '标签', link: '/tags/'},
+            //         {text: '归档', link: '/archives/'}
+            //     ]
+            // }
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.png', // 导航栏logo
-        repo: 'fastcv-cc', // 导航栏右侧生成Github链接
+        repo: 'CatCatBug/fastcv-blog', // 导航栏右侧生成Github链接
         searchMaxSuggestions: 10, // 搜索结果显示最大数
         lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
         docsDir: 'docs', // 编辑的文件夹
@@ -142,7 +142,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 {
                     iconClass: 'icon-github',
                     title: 'Star我',
-                    link: 'https://github.com/rcbb-cc'
+                    link: 'https://github.com/CatCatBug/fastcv-blog'
                 },
 
                 {
@@ -266,11 +266,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             {
                 choosen: 'gitalk',
                 options: {
-                    clientID: '7fa39bf189d19a263326',
-                    clientSecret: 'f6a0f93f4daf93003c712317c540993517512fd3',
+                    clientID: '6f97ead0ad58265e7b9d',
+                    clientSecret: '05b66ab492b8ca024baf2e28d9c7453b9bc147fa',
                     repo: 'fastcv-blog', // GitHub 仓库
-                    owner: 'fastcv-cc', // GitHub仓库所有者
-                    admin: ['fastcv-cc'], // 对仓库有写权限的人
+                    owner: 'pisto', // GitHub仓库所有者
+                    admin: ['pisto','fastcv.cc'], // 对仓库有写权限的人
                     // distractionFreeMode: true,
                     pagerDirection: 'last', // 'first'正序 | 'last'倒序
                     id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
@@ -292,7 +292,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         [
             'sitemap',
             {
-                hostname: 'https://fastcv.cc'
+                hostname: 'http://www.fastcv.cc'
             }
         ]
     ],
