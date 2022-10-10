@@ -46,7 +46,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             {
                 text: '软实力',
                 link: '/favorites/'
-            },
+            }
             // {
             //     text: '索引',
             //     link: '/archives/',
@@ -142,7 +142,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 {
                     iconClass: 'icon-github',
                     title: 'Star我',
-                    link: 'https://github.com/rcbb-cc'
+                    link: 'https://github.com/CatCatBug/fastcv-blog'
                 },
 
                 {
@@ -267,7 +267,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 choosen: 'gitalk',
                 options: {
                     clientID: '6f97ead0ad58265e7b9d',
-                    clientSecret: 'df10ef912cc76a726e54f52959f2f3d6f1eed146',
+                    clientSecret: '13cb77ec7655cc71161ab8fcc1cc53d963c9df2b',
                     repo: 'fastcv-blog', // GitHub 仓库
                     owner: 'CatCatBug', // GitHub仓库所有者
                     admin: ['CatCatBug'], // 对仓库有写权限的人
