@@ -142,7 +142,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 {
                     iconClass: 'icon-github',
                     title: 'Star我',
-                    link: 'https://github.com/CatCatBug/fastcv-blog'
+                    link: 'https://github.com/rcbb-cc'
                 },
 
                 {
@@ -267,10 +267,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 choosen: 'gitalk',
                 options: {
                     clientID: '6f97ead0ad58265e7b9d',
-                    clientSecret: '05b66ab492b8ca024baf2e28d9c7453b9bc147fa',
+                    clientSecret: 'df10ef912cc76a726e54f52959f2f3d6f1eed146',
                     repo: 'fastcv-blog', // GitHub 仓库
-                    owner: 'pisto', // GitHub仓库所有者
-                    admin: ['pisto','fastcv.cc'], // 对仓库有写权限的人
+                    owner: 'CatCatBug', // GitHub仓库所有者
+                    admin: ['CatCatBug'], // 对仓库有写权限的人
                     // distractionFreeMode: true,
                     pagerDirection: 'last', // 'first'正序 | 'last'倒序
                     id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
@@ -292,7 +292,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         [
             'sitemap',
             {
-                hostname: 'http://www.fastcv.cc'
+                hostname: 'https://fastcv.cc'
             }
         ]
     ],
