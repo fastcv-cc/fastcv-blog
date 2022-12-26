@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java正则表达式 | 极速cv</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-8621788234752924" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924" crossorigin="anonymous"></script>
+    <meta name="description" content="CV操作好，下班就是早。">
+    <meta name="keywords" content="cv,fastcv,个人博客">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#7b074b">
+    
+    <link rel="preload" href="/assets/css/0.styles.d1bed3dc.css" as="style"><link rel="preload" href="/assets/js/app.e1bc90e6.js" as="script"><link rel="preload" href="/assets/js/2.2dfa729a.js" as="script"><link rel="preload" href="/assets/js/20.4b6feb7d.js" as="script"><link rel="prefetch" href="/assets/js/10.35c27e70.js"><link rel="prefetch" href="/assets/js/11.cc577099.js"><link rel="prefetch" href="/assets/js/12.a6e96cf9.js"><link rel="prefetch" href="/assets/js/13.62d81f10.js"><link rel="prefetch" href="/assets/js/14.0634038b.js"><link rel="prefetch" href="/assets/js/15.9b738075.js"><link rel="prefetch" href="/assets/js/16.318f5092.js"><link rel="prefetch" href="/assets/js/17.ef4612a8.js"><link rel="prefetch" href="/assets/js/18.140f718a.js"><link rel="prefetch" href="/assets/js/19.9d1daaf3.js"><link rel="prefetch" href="/assets/js/21.0ed2f2d5.js"><link rel="prefetch" href="/assets/js/22.94066693.js"><link rel="prefetch" href="/assets/js/23.d09c9beb.js"><link rel="prefetch" href="/assets/js/24.1fdf3365.js"><link rel="prefetch" href="/assets/js/25.1b7a2740.js"><link rel="prefetch" href="/assets/js/26.4cfbc8ca.js"><link rel="prefetch" href="/assets/js/27.03291f82.js"><link rel="prefetch" href="/assets/js/28.ee2b7004.js"><link rel="prefetch" href="/assets/js/29.2c8138ce.js"><link rel="prefetch" href="/assets/js/3.4878f8f3.js"><link rel="prefetch" href="/assets/js/30.b1298471.js"><link rel="prefetch" href="/assets/js/31.da38da5f.js"><link rel="prefetch" href="/assets/js/32.3d6eb133.js"><link rel="prefetch" href="/assets/js/33.b6d94bfc.js"><link rel="prefetch" href="/assets/js/34.b6f3263e.js"><link rel="prefetch" href="/assets/js/35.97f4d2e7.js"><link rel="prefetch" href="/assets/js/36.b02e62ca.js"><link rel="prefetch" href="/assets/js/37.d2d7efa3.js"><link rel="prefetch" href="/assets/js/38.6ae288c0.js"><link rel="prefetch" href="/assets/js/39.4fc76e63.js"><link rel="prefetch" href="/assets/js/4.f7f2d443.js"><link rel="prefetch" href="/assets/js/40.284cd7ad.js"><link rel="prefetch" href="/assets/js/41.29df7654.js"><link rel="prefetch" href="/assets/js/42.ba55f3be.js"><link rel="prefetch" href="/assets/js/43.b7195909.js"><link rel="prefetch" href="/assets/js/44.e6098941.js"><link rel="prefetch" href="/assets/js/45.40b8ce81.js"><link rel="prefetch" href="/assets/js/46.f83bf354.js"><link rel="prefetch" href="/assets/js/47.5e550ac5.js"><link rel="prefetch" href="/assets/js/48.c4fb8ab6.js"><link rel="prefetch" href="/assets/js/49.a43055dc.js"><link rel="prefetch" href="/assets/js/5.97835dc3.js"><link rel="prefetch" href="/assets/js/50.9a846d99.js"><link rel="prefetch" href="/assets/js/51.d96445d2.js"><link rel="prefetch" href="/assets/js/52.b569403d.js"><link rel="prefetch" href="/assets/js/53.3ed54ad9.js"><link rel="prefetch" href="/assets/js/54.eb8b3273.js"><link rel="prefetch" href="/assets/js/55.f8d65037.js"><link rel="prefetch" href="/assets/js/56.eb6ad4c4.js"><link rel="prefetch" href="/assets/js/57.b209646e.js"><link rel="prefetch" href="/assets/js/58.b2d0e592.js"><link rel="prefetch" href="/assets/js/59.4af484c7.js"><link rel="prefetch" href="/assets/js/6.866ee092.js"><link rel="prefetch" href="/assets/js/60.671eff60.js"><link rel="prefetch" href="/assets/js/61.400e04cf.js"><link rel="prefetch" href="/assets/js/62.f09e41bc.js"><link rel="prefetch" href="/assets/js/63.90e1dd5a.js"><link rel="prefetch" href="/assets/js/64.5a32ed9a.js"><link rel="prefetch" href="/assets/js/65.8e40013a.js"><link rel="prefetch" href="/assets/js/66.89fc2763.js"><link rel="prefetch" href="/assets/js/67.58b9ef6f.js"><link rel="prefetch" href="/assets/js/68.d01caaf5.js"><link rel="prefetch" href="/assets/js/69.383945cb.js"><link rel="prefetch" href="/assets/js/7.abd87bf8.js"><link rel="prefetch" href="/assets/js/70.a5af60f8.js"><link rel="prefetch" href="/assets/js/71.4c312526.js"><link rel="prefetch" href="/assets/js/72.f250e38c.js"><link rel="prefetch" href="/assets/js/73.d10d7dda.js"><link rel="prefetch" href="/assets/js/74.afa7a2e8.js"><link rel="prefetch" href="/assets/js/75.b52d9fa5.js"><link rel="prefetch" href="/assets/js/76.64654eb8.js"><link rel="prefetch" href="/assets/js/77.b377a166.js"><link rel="prefetch" href="/assets/js/78.f7463089.js"><link rel="prefetch" href="/assets/js/79.051facd4.js"><link rel="prefetch" href="/assets/js/8.ab056171.js"><link rel="prefetch" href="/assets/js/80.16893adb.js"><link rel="prefetch" href="/assets/js/81.4c1bc8e9.js"><link rel="prefetch" href="/assets/js/82.6afcb616.js"><link rel="prefetch" href="/assets/js/83.5324961c.js"><link rel="prefetch" href="/assets/js/84.2eb2e5d2.js"><link rel="prefetch" href="/assets/js/85.31056335.js"><link rel="prefetch" href="/assets/js/86.46ee7480.js"><link rel="prefetch" href="/assets/js/87.ee19866d.js"><link rel="prefetch" href="/assets/js/9.b608f08b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d1bed3dc.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="极速cv" class="logo"> <span class="site-name can-hide">极速cv</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>极速cv</h3> <span>CV操作就是好~</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机组成原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Java</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/1e535d/" class="sidebar-link">JavaPoet的学习使用</a></li><li><a href="/pages/8f05cf/" class="sidebar-link">Java反射</a></li><li><a href="/pages/767133/" class="sidebar-link">Java集合</a></li><li><a href="/pages/88149c/" aria-current="page" class="active sidebar-link">Java正则表达式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/pages/2882fd/" class="sidebar-link">Properties的学习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Kotlin</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Dart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C++</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="8498052873"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80" title="分类" data-v-06225672>编程基础</a></li><li data-v-06225672><a href="/categories/?category=Java" title="分类" data-v-06225672>Java</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://fastcv.cc/" target="_blank" title="作者" class="beLink" data-v-06225672>fastcv</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-12-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">Java正则表达式<!----></h1>  <div class="theme-vdoing-content content__default"><h3 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h3> <p>在昨天撸代码的过程中，涉及到了正则这个我不会的东西，于是，今天来学习下有关它的一些知识。</p> <p>正则表达式定义了字符串的模式。</p> <p>正则表达式可以用来搜索、编辑或处理文本。</p> <p>正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。</p> <h3 id="正则表达式实例"><a href="#正则表达式实例" class="header-anchor">#</a> 正则表达式实例</h3> <p>一个字符串其实就是一个简单的正则表达式，例如 Hello World 正则表达式匹配 &quot;Hello World&quot; 字符串。</p> <p>.（点号）也是一个正则表达式，它匹配任何一个字符如：&quot;a&quot; 或 &quot;1&quot;。</p> <p>下表列出了一些正则表达式的实例及描述：</p> <table><thead><tr><th>正则表达式</th> <th>描述</th></tr></thead> <tbody><tr><td>this is text</td> <td>匹配字符串 &quot;this is text&quot;</td></tr> <tr><td>this\s+is\s+text</td> <td>注意字符串中的 \s+。匹配单词 &quot;this&quot; 后面的 \s+ 可以匹配多个空格，之后匹配 is 字符串，再之后 \s+ 匹配多个空格然后再跟上 text 字符串。可以匹配这个实例：this is text</td></tr></tbody></table> <h4 id="java-util-regex-包主要包括以下三个类"><a href="#java-util-regex-包主要包括以下三个类" class="header-anchor">#</a> java.util.regex 包主要包括以下三个类：</h4> <ul><li><p>Pattern 类：
+pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。</p></li> <li><p>Matcher 类：
+Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。</p></li> <li><p>PatternSyntaxException：
+PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。</p></li></ul> <h5 id="以下实例中使用了正则表达式-runoob-用于查找字符串中是否包了-runoob-子串"><a href="#以下实例中使用了正则表达式-runoob-用于查找字符串中是否包了-runoob-子串" class="header-anchor">#</a> 以下实例中使用了正则表达式 .<em>runoob.</em> 用于查找字符串中是否包了 runoob 子串：</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Pattern;
+
+public class LearnMain1 {
+	
+	public static void main(String[] args) {
+		String content = &quot;I am noob &quot; +
+		        &quot;from runoob.com.&quot;;
+		String pattern = &quot;.*runoob.*&quot;;
+		boolean isMatcher = Pattern.matches(pattern, content);
+		System.out.println(&quot;字符串中是否包含了 'runoob' 子字符串? &quot; + isMatcher);
+	}
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>运行结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>字符串中是否包含了 'runoob' 子字符串? true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="捕获组"><a href="#捕获组" class="header-anchor">#</a> 捕获组</h3> <p>捕获组是把多个字符当一个单独单元进行处理的方法，它通过对括号内的字符分组来创建。</p> <p>例如，正则表达式 (dog) 创建了单一分组，组里包含&quot;d&quot;，&quot;o&quot;，和&quot;g&quot;</p> <p>捕获组是通过从左至右计算其开括号来编号。例如，在表达式（（A）（B（C））），有四个这样的组：</p> <ul><li>((A)(B(C)))</li> <li>(A)</li> <li>(B(C))</li> <li>(C)</li></ul> <p>可以通过调用 matcher 对象的 groupCount 方法来查看表达式有多少个分组。groupCount 方法返回一个 int 值，表示matcher对象当前有多个捕获组。</p> <p>还有一个特殊的组（group(0)），它总是代表整个表达式。该组不包括在 groupCount 的返回值中。</p> <h4 id="实例"><a href="#实例" class="header-anchor">#</a> 实例</h4> <p>下面的例子说明如何从一个给定的字符串中找到数字串：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LearnMain2 {
+
+	public static void main(String[] args) {
+		// 按指定模式在字符串查找
+	      String line = &quot;This order was placed for QT3000! OK?&quot;;
+	      String pattern = &quot;(\\D*)(\\d+)(.*)&quot;;
+	      
+	      Pattern r = Pattern.compile(pattern);
+	      Matcher m = r.matcher(line);
+	      int count = m.groupCount();
+	      System.out.println(&quot;count = &quot; + (count+1));
+	      m.find();
+	      for(int i=0;i&lt;=count;i++) {
+	    	  System.out.println(&quot;Found value: &quot; + m.group(i));
+	      }
+	}
+	
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h5 id="运行结果为"><a href="#运行结果为" class="header-anchor">#</a> 运行结果为：</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>count = 4
+Found value: This order was placed for QT3000! OK?
+Found value: This order was placed for QT
+Found value: 3000
+Found value: ! OK?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>？？？？？  wfk   为什么会出现这些东西？  怎么出现的？？？？    不理解呀！！？？？？</p> <h5 id="先不急-让我们带着疑问去看看发生了什么"><a href="#先不急-让我们带着疑问去看看发生了什么" class="header-anchor">#</a> 先不急，让我们带着疑问去看看发生了什么？？？？</h5> <h3 id="正则表达式语法"><a href="#正则表达式语法" class="header-anchor">#</a> 正则表达式语法</h3> <p>在其他语言中，\\ 表示：我想要在正则表达式中插入一个普通的（字面上的）反斜杠，请不要给它任何特殊的意义。</p> <p>在 Java 中，\\ 表示：我要插入一个正则表达式的反斜线，所以其后的字符具有特殊的意义。</p> <p>所以，在其他的语言中（如Perl），一个反斜杠 \ 就足以具有转义的作用，而在 Java 中正则表达式中则需要有两个反斜杠才能被解析为其他语言中的转义作用。也可以简单的理解在 Java 的正则表达式中，两个 \\ 代表其他语言中的一个 \，这也就是为什么表示一位数字的正则表达式是 \\d，而表示一个普通的反斜杠是 \\\\。</p> <table><thead><tr><th>字符</th> <th>说明</th></tr></thead> <tbody><tr><td>\</td> <td>将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\&quot;匹配&quot;\&quot;，&quot;\(&quot;匹配&quot;(&quot;。</td></tr> <tr><td>^</td> <td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。</td></tr> <tr><td>$</td> <td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。</td></tr> <tr><td>*</td> <td>零次或多次匹配前面的字符或子表达式。例如，zo<em>匹配&quot;z&quot;和&quot;zoo&quot;。</em> 等效于 {0,}。</td></tr> <tr><td>+</td> <td>一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。</td></tr> <tr><td>?</td> <td>零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。</td></tr> <tr><td>{n}</td> <td>n 是非负整数。正好匹配 n次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配， 但与&quot;food&quot;中的两个&quot;o&quot;匹配。</td></tr> <tr><td>{n,}</td> <td>n 是非负整数。至少匹配 n次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;， 而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。</td></tr> <tr><td>{n,m}</td> <td>m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。'o{0,1}' 等效于 'o?'。注意：您不能将空格插入逗号和数字之间。</td></tr> <tr><td>?</td> <td>当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。</td></tr> <tr><td>.</td> <td>匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。</td></tr> <tr><td>(pattern)</td> <td>匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。</td></tr> <tr><td>(?:pattern)</td> <td>匹配 pattern 但不捕获该匹配的子表达式， 即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，'industr(?:y|ies) 是比 'industry|industries' 更经济的表达式。</td></tr> <tr><td>(?=pattern)</td> <td>执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?=95|98|NT|2000)' 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot; 。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td></tr> <tr><td>(?!pattern)</td> <td>执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?!95|98|NT|2000)' 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。 预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td></tr> <tr><td>x|y</td> <td>匹配 x 或 y。例如，'z|food' 匹配&quot;z&quot;或&quot;food&quot;。'(z|f)ood' 匹配&quot;zood&quot;或&quot;food&quot;。</td></tr> <tr><td>[xyz]</td> <td>字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。</td></tr> <tr><td>[^xyz]</td> <td>反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。</td></tr> <tr><td>[a-z]</td> <td>字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。</td></tr> <tr><td>[^a-z]</td> <td>反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。</td></tr> <tr><td>\b</td> <td>匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。</td></tr> <tr><td>\B</td> <td>非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。</td></tr> <tr><td>\cx</td> <td>匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。</td></tr> <tr><td>\d</td> <td>数字字符匹配。等效于 [0-9]。</td></tr> <tr><td>\D</td> <td>非数字字符匹配。等效于 [^0-9]。</td></tr> <tr><td>\f</td> <td>换页符匹配。等效于 \x0c 和 \cL。</td></tr> <tr><td>\n</td> <td>换行符匹配。等效于 \x0a 和 \cJ。</td></tr> <tr><td>\r</td> <td>匹配一个回车符。等效于 \x0d 和 \cM。</td></tr> <tr><td>\s</td> <td>匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。</td></tr> <tr><td>\S</td> <td>匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。</td></tr> <tr><td>\t</td> <td>制表符匹配。与 \x09 和 \cI 等效。</td></tr> <tr><td>\v</td> <td>垂直制表符匹配。与 \x0b 和 \cK 等效。</td></tr> <tr><td>\w</td> <td>匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。</td></tr> <tr><td>\W</td> <td>与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。</td></tr> <tr><td>\xn</td> <td>匹配 n，此处的 n 是一个十六进制转义码。 十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。</td></tr> <tr><td>\num</td> <td>匹配 num，此处的 num 是一个正整数。 到捕获匹配的反向引用。 例如，&quot;(.)\1&quot;匹配两个连续的相同字符。</td></tr> <tr><td>\n</td> <td>标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。</td></tr> <tr><td>\nm</td> <td>标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。</td></tr> <tr><td>\nml</td> <td>当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。</td></tr> <tr><td>\un</td> <td>匹配 n，其中 n 是以四位十六进制数表示的 Unicode 字符。例如，\u00A9 匹配版权符号 (©)。</td></tr></tbody></table> <h4 id="解释"><a href="#解释" class="header-anchor">#</a> 解释</h4> <p>看完这些密密麻麻的语法后，是不是感觉记不住，记不住就对了，我们来对照着找，首先：整条字符串为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>This order was placed for QT3000! OK?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后，我们分组规则为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;(\\D*)(\\d+)(.*)&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>从括号可以看出，整体被分为了4个组，因为0不记在count里面（所以加1）</p> <p>第一组：整体</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>This order was placed for QT3000! OK?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>第二组：\\D*</p> <p>\\D 查表表示为 非数字字符匹配。等效于 [^0-9]。即，非数字就是这个组，所以，从前往后，到数字就停止</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>This order was placed for QT
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>第三组：\\d+</p> <p>\\d+ 查表表示为 数字字符匹配。等效于 [0-9]。所以，从上一个组的后面开始，查找数字，碰到非数字停止</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>3000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>第四组：.*</p> <p>. 查表表示为 匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。</p> <p>* 查表表示为 零次或多次匹配前面的字符或子表达式。例如，zo匹配&quot;z&quot;和&quot;zoo&quot;。 等效于 {0,}。</p> <p>所以，接下来的所有字符都被打印出来了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>! OK?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="在这过程中-有过几个疑问"><a href="#在这过程中-有过几个疑问" class="header-anchor">#</a> 在这过程中，有过几个疑问：</h5> <p>1、\r\n是啥？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>在windos中可以理解为回车换行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2、匹配数字的话，如果后面还有数字怎么办，如这种：This order was placed for QT3000! OK? NO it is QT4300
+，那么，第三组会输出啥？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>经过试验，我得到，它会输出3000，而后面的4300不会输出，这就是为啥我前面说，遇到字母就停止匹配（字符相同）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>3、*遇到空格会输出吗？如：This order was placed for QT3000 ! OK? NO it is QT4300，这样子，会输出前面的空格吗？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>答案是-------是的，会输出
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>4、为啥会跟着前面已经匹配的字符串后面去匹配？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>我猜的话，有个定位的标志
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="matcher-类的方法"><a href="#matcher-类的方法" class="header-anchor">#</a> Matcher 类的方法</h3> <p>前面，我们用到了这个类，这个时候来了解下它</p> <h4 id="索引方法"><a href="#索引方法" class="header-anchor">#</a> 索引方法</h4> <p>索引方法提供了有用的索引值，精确表明输入字符串中在哪能找到匹配：</p> <table><thead><tr><th>序号</th> <th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td>public int start()</td> <td>返回以前匹配的初始索引。</td></tr> <tr><td>2</td> <td>public int start(int group)</td> <td>返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引</td></tr> <tr><td>3</td> <td>public int end()</td> <td>返回最后匹配字符之后的偏移量。</td></tr> <tr><td>4</td> <td>public int end(int group)</td> <td>返回在以前的匹配操作期间，由给定组所捕获子序列的最后字符之后的偏移量。</td></tr></tbody></table> <p>学到这里，我们就知道了，原来是有个索引的存在</p> <h4 id="研究方法"><a href="#研究方法" class="header-anchor">#</a> 研究方法</h4> <p>研究方法用来检查输入字符串并返回一个布尔值，表示是否找到该模式：</p> <table><thead><tr><th>序号</th> <th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td>public boolean lookingAt()</td> <td>尝试将从区域开头开始的输入序列与该模式匹配。</td></tr> <tr><td>2</td> <td>public boolean find()</td> <td>尝试查找与该模式匹配的输入序列的下一个子序列。</td></tr> <tr><td>3</td> <td>public boolean find(int start）</td> <td>重置此匹配器，然后尝试查找匹配该模式、从指定索引开始的输入序列的下一个子序列。</td></tr> <tr><td>4</td> <td>public boolean matches()</td> <td>尝试将整个区域与模式匹配。</td></tr></tbody></table> <h4 id="替换方法"><a href="#替换方法" class="header-anchor">#</a> 替换方法</h4> <p>替换方法是替换输入字符串里文本的方法：</p> <table><thead><tr><th>序号</th> <th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td>public Matcher appendReplacement(StringBuffer sb, String replacement)</td> <td>实现非终端添加和替换步骤。</td></tr> <tr><td>2</td> <td>public StringBuffer appendTail(StringBuffer sb)</td> <td>实现终端添加和替换步骤。</td></tr> <tr><td>3</td> <td>public String replaceAll(String replacement)</td> <td>替换模式与给定替换字符串相匹配的输入序列的每个子序列。</td></tr> <tr><td>4</td> <td>public String replaceFirst(String replacement)</td> <td>替换模式与给定替换字符串匹配的输入序列的第一个子序列。</td></tr> <tr><td>5</td> <td>public static String quoteReplacement(String s)</td> <td>返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给Matcher类的appendReplacement 方法一个字面字符串一样工作。</td></tr></tbody></table> <h5 id="start-和-end-方法"><a href="#start-和-end-方法" class="header-anchor">#</a> start 和 end 方法</h5> <p>下面是一个对单词 &quot;cat&quot; 出现在输入字符串中出现次数进行计数的例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LearnMain2 {
+
+	private static final String REGEX = &quot;\\bcat\\b&quot;;
+    private static final String INPUT =
+                                    &quot;cat cat cat cattie cat&quot;;
+ 
+    public static void main( String args[] ){
+       Pattern p = Pattern.compile(REGEX);
+       Matcher m = p.matcher(INPUT); // 获取 matcher 对象
+       int count = 0;
+ 
+       while(m.find()) {
+         count++;
+         System.out.println(&quot;Match number &quot;+count);
+         System.out.println(&quot;start(): &quot;+m.start());
+         System.out.println(&quot;end(): &quot;+m.end());
+      }
+   }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>运行结果为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Match number 1
+start(): 0
+end(): 3
+Match number 2
+start(): 4
+end(): 7
+Match number 3
+start(): 8
+end(): 11
+Match number 4
+start(): 19
+end(): 22
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>可以看到这个例子是使用单词边界，以确保字母 &quot;c&quot; &quot;a&quot; &quot;t&quot; 并非仅是一个较长的词的子串。它也提供了一些关于输入字符串中匹配发生位置的有用信息。</p> <p>Start 方法返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引，end 方法最后一个匹配字符的索引加 1。</p> <h5 id="matches-和-lookingat-方法"><a href="#matches-和-lookingat-方法" class="header-anchor">#</a> matches 和 lookingAt 方法</h5> <p>matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而lookingAt 不要求。</p> <p>lookingAt 方法虽然不需要整句都匹配，但是需要从第一个字符开始匹配。</p> <p>这两个方法经常在输入字符串的开始使用。</p> <p>我们通过下面这个例子，来解释这个功能：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LearnMain2 {
+
+	private static final String REGEX = &quot;foo&quot;;
+    private static final String INPUT = &quot;fooooooooooooooooo&quot;;
+    private static final String INPUT2 = &quot;ooooofoooooooooooo&quot;;
+    private static Pattern pattern;
+    private static Matcher matcher;
+    private static Matcher matcher2;
+ 
+    public static void main( String args[] ){
+       pattern = Pattern.compile(REGEX);
+       matcher = pattern.matcher(INPUT);
+       matcher2 = pattern.matcher(INPUT2);
+ 
+       System.out.println(&quot;Current REGEX is: &quot;+REGEX);
+       System.out.println(&quot;Current INPUT is: &quot;+INPUT);
+       System.out.println(&quot;Current INPUT2 is: &quot;+INPUT2);
+ 
+ 
+       System.out.println(&quot;lookingAt(): &quot;+matcher.lookingAt());
+       System.out.println(&quot;matches(): &quot;+matcher.matches());
+       System.out.println(&quot;lookingAt(): &quot;+matcher2.lookingAt());
+   }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>运行结果为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Current REGEX is: foo
+Current INPUT is: fooooooooooooooooo
+Current INPUT2 is: ooooofoooooooooooo
+lookingAt(): true
+matches(): false
+lookingAt(): false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="replacefirst-和-replaceall-方法"><a href="#replacefirst-和-replaceall-方法" class="header-anchor">#</a> replaceFirst 和 replaceAll 方法</h5> <p>replaceFirst 和 replaceAll 方法用来替换匹配正则表达式的文本。不同的是，replaceFirst 替换首次匹配，replaceAll 替换所有匹配。</p> <p>下面的例子来解释这个功能：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LearnMain2 {
+
+	private static String REGEX = &quot;dog&quot;;
+    private static String INPUT = &quot;The dog says meow. &quot; +
+                                    &quot;All dogs say meow.&quot;;
+    private static String REPLACE = &quot;cat&quot;;
+ 
+    public static void main(String[] args) {
+       Pattern p = Pattern.compile(REGEX);
+       // get a matcher object
+       Matcher m = p.matcher(INPUT); 
+       INPUT = m.replaceAll(REPLACE);
+       System.out.println(INPUT);
+   }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>运行结果为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>The cat says meow. All cats say meow.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="appendreplacement-和-appendtail-方法"><a href="#appendreplacement-和-appendtail-方法" class="header-anchor">#</a> appendReplacement 和 appendTail 方法</h5> <p>Matcher 类也提供了appendReplacement 和 appendTail 方法用于文本替换：</p> <p>看下面的例子来解释这个功能：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LearnMain2 {
+
+	private static String REGEX = &quot;a*b&quot;;
+	   private static String INPUT = &quot;aabfooaabfooabfoobkkk&quot;;
+	   private static String REPLACE = &quot;-&quot;;
+	   public static void main(String[] args) {
+	      Pattern p = Pattern.compile(REGEX);
+	      // 获取 matcher 对象
+	      Matcher m = p.matcher(INPUT);
+	      StringBuffer sb = new StringBuffer();
+	      while(m.find()){
+	         m.appendReplacement(sb,REPLACE);
+	      }
+	      m.appendTail(sb);
+	      System.out.println(sb.toString());
+	   }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>运行结果为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-foo-foo-foo-kkk
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="patternsyntaxexception-类的方法"><a href="#patternsyntaxexception-类的方法" class="header-anchor">#</a> PatternSyntaxException 类的方法</h3> <p>PatternSyntaxException 是一个非强制异常类，它指示一个正则表达式模式中的语法错误。</p> <p>PatternSyntaxException 类提供了下面的方法来帮助我们查看发生了什么错误。</p> <table><thead><tr><th>序号</th> <th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td>public String getDescription()</td> <td>获取错误的描述。</td></tr> <tr><td>2</td> <td>public int getIndex()</td> <td>获取错误的索引。</td></tr> <tr><td>3</td> <td>public String getPattern()</td> <td>获取错误的正则表达式模式。</td></tr> <tr><td>4</td> <td>public String getMessage()</td> <td>返回多行字符串，包含语法错误及其索引的描述、错误的正则表达式模式和模式中错误索引的可视化指示。</td></tr></tbody></table></div></div> <div class="page-slot page-slot-bottom"></br><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="auto"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="7043271566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/17/2022</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/767133/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Java集合</div></a> <a href="/pages/2882fd/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Properties的学习</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/767133/" class="prev">Java集合</a></span> <span class="next"><a href="/pages/2882fd/">Properties的学习</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/1e535d/"><div>
+            JavaPoet的学习使用
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/8f05cf/"><div>
+            Java反射
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/767133/"><div>
+            Java集合
+            <!----></div></a> <span class="date">12-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/CatCatBug/fastcv-blog" title="Star我" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/playlist?id=5161366267" title="有品位的歌单" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>极速cv | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">粤ICP备2022111699号-1</a> </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.e1bc90e6.js" defer></script><script src="/assets/js/2.2dfa729a.js" defer></script><script src="/assets/js/20.4b6feb7d.js" defer></script>
+  </body>
+</html>

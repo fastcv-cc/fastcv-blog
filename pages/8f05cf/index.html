@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java反射 | 极速cv</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-8621788234752924" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924" crossorigin="anonymous"></script>
+    <meta name="description" content="CV操作好，下班就是早。">
+    <meta name="keywords" content="cv,fastcv,个人博客">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#7b074b">
+    
+    <link rel="preload" href="/assets/css/0.styles.d1bed3dc.css" as="style"><link rel="preload" href="/assets/js/app.e1bc90e6.js" as="script"><link rel="preload" href="/assets/js/2.2dfa729a.js" as="script"><link rel="preload" href="/assets/js/18.140f718a.js" as="script"><link rel="prefetch" href="/assets/js/10.35c27e70.js"><link rel="prefetch" href="/assets/js/11.cc577099.js"><link rel="prefetch" href="/assets/js/12.a6e96cf9.js"><link rel="prefetch" href="/assets/js/13.62d81f10.js"><link rel="prefetch" href="/assets/js/14.0634038b.js"><link rel="prefetch" href="/assets/js/15.9b738075.js"><link rel="prefetch" href="/assets/js/16.318f5092.js"><link rel="prefetch" href="/assets/js/17.ef4612a8.js"><link rel="prefetch" href="/assets/js/19.9d1daaf3.js"><link rel="prefetch" href="/assets/js/20.4b6feb7d.js"><link rel="prefetch" href="/assets/js/21.0ed2f2d5.js"><link rel="prefetch" href="/assets/js/22.94066693.js"><link rel="prefetch" href="/assets/js/23.d09c9beb.js"><link rel="prefetch" href="/assets/js/24.1fdf3365.js"><link rel="prefetch" href="/assets/js/25.1b7a2740.js"><link rel="prefetch" href="/assets/js/26.4cfbc8ca.js"><link rel="prefetch" href="/assets/js/27.03291f82.js"><link rel="prefetch" href="/assets/js/28.ee2b7004.js"><link rel="prefetch" href="/assets/js/29.2c8138ce.js"><link rel="prefetch" href="/assets/js/3.4878f8f3.js"><link rel="prefetch" href="/assets/js/30.b1298471.js"><link rel="prefetch" href="/assets/js/31.da38da5f.js"><link rel="prefetch" href="/assets/js/32.3d6eb133.js"><link rel="prefetch" href="/assets/js/33.b6d94bfc.js"><link rel="prefetch" href="/assets/js/34.b6f3263e.js"><link rel="prefetch" href="/assets/js/35.97f4d2e7.js"><link rel="prefetch" href="/assets/js/36.b02e62ca.js"><link rel="prefetch" href="/assets/js/37.d2d7efa3.js"><link rel="prefetch" href="/assets/js/38.6ae288c0.js"><link rel="prefetch" href="/assets/js/39.4fc76e63.js"><link rel="prefetch" href="/assets/js/4.f7f2d443.js"><link rel="prefetch" href="/assets/js/40.284cd7ad.js"><link rel="prefetch" href="/assets/js/41.29df7654.js"><link rel="prefetch" href="/assets/js/42.ba55f3be.js"><link rel="prefetch" href="/assets/js/43.b7195909.js"><link rel="prefetch" href="/assets/js/44.e6098941.js"><link rel="prefetch" href="/assets/js/45.40b8ce81.js"><link rel="prefetch" href="/assets/js/46.f83bf354.js"><link rel="prefetch" href="/assets/js/47.5e550ac5.js"><link rel="prefetch" href="/assets/js/48.c4fb8ab6.js"><link rel="prefetch" href="/assets/js/49.a43055dc.js"><link rel="prefetch" href="/assets/js/5.97835dc3.js"><link rel="prefetch" href="/assets/js/50.9a846d99.js"><link rel="prefetch" href="/assets/js/51.d96445d2.js"><link rel="prefetch" href="/assets/js/52.b569403d.js"><link rel="prefetch" href="/assets/js/53.3ed54ad9.js"><link rel="prefetch" href="/assets/js/54.eb8b3273.js"><link rel="prefetch" href="/assets/js/55.f8d65037.js"><link rel="prefetch" href="/assets/js/56.eb6ad4c4.js"><link rel="prefetch" href="/assets/js/57.b209646e.js"><link rel="prefetch" href="/assets/js/58.b2d0e592.js"><link rel="prefetch" href="/assets/js/59.4af484c7.js"><link rel="prefetch" href="/assets/js/6.866ee092.js"><link rel="prefetch" href="/assets/js/60.671eff60.js"><link rel="prefetch" href="/assets/js/61.400e04cf.js"><link rel="prefetch" href="/assets/js/62.f09e41bc.js"><link rel="prefetch" href="/assets/js/63.90e1dd5a.js"><link rel="prefetch" href="/assets/js/64.5a32ed9a.js"><link rel="prefetch" href="/assets/js/65.8e40013a.js"><link rel="prefetch" href="/assets/js/66.89fc2763.js"><link rel="prefetch" href="/assets/js/67.58b9ef6f.js"><link rel="prefetch" href="/assets/js/68.d01caaf5.js"><link rel="prefetch" href="/assets/js/69.383945cb.js"><link rel="prefetch" href="/assets/js/7.abd87bf8.js"><link rel="prefetch" href="/assets/js/70.a5af60f8.js"><link rel="prefetch" href="/assets/js/71.4c312526.js"><link rel="prefetch" href="/assets/js/72.f250e38c.js"><link rel="prefetch" href="/assets/js/73.d10d7dda.js"><link rel="prefetch" href="/assets/js/74.afa7a2e8.js"><link rel="prefetch" href="/assets/js/75.b52d9fa5.js"><link rel="prefetch" href="/assets/js/76.64654eb8.js"><link rel="prefetch" href="/assets/js/77.b377a166.js"><link rel="prefetch" href="/assets/js/78.f7463089.js"><link rel="prefetch" href="/assets/js/79.051facd4.js"><link rel="prefetch" href="/assets/js/8.ab056171.js"><link rel="prefetch" href="/assets/js/80.16893adb.js"><link rel="prefetch" href="/assets/js/81.4c1bc8e9.js"><link rel="prefetch" href="/assets/js/82.6afcb616.js"><link rel="prefetch" href="/assets/js/83.5324961c.js"><link rel="prefetch" href="/assets/js/84.2eb2e5d2.js"><link rel="prefetch" href="/assets/js/85.31056335.js"><link rel="prefetch" href="/assets/js/86.46ee7480.js"><link rel="prefetch" href="/assets/js/87.ee19866d.js"><link rel="prefetch" href="/assets/js/9.b608f08b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d1bed3dc.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="极速cv" class="logo"> <span class="site-name can-hide">极速cv</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>极速cv</h3> <span>CV操作就是好~</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机组成原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Java</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/1e535d/" class="sidebar-link">JavaPoet的学习使用</a></li><li><a href="/pages/8f05cf/" aria-current="page" class="active sidebar-link">Java反射</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/8f05cf/#概述" class="sidebar-link">概述</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/8f05cf/#怎么得到class的对象" class="sidebar-link">怎么得到Class的对象</a></li><li class="sidebar-sub-header level3"><a href="/pages/8f05cf/#基本类型的字节码" class="sidebar-link">基本类型的字节码</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/8f05cf/#反射深入分析" class="sidebar-link">反射深入分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/8f05cf/#什么是反射" class="sidebar-link">什么是反射？</a></li><li class="sidebar-sub-header level4"><a href="/pages/8f05cf/#类构造函数的反射-constructor" class="sidebar-link">类构造函数的反射 Constructor</a></li><li class="sidebar-sub-header level4"><a href="/pages/8f05cf/#类成员变量的反射-filed" class="sidebar-link">类成员变量的反射 Filed</a></li><li class="sidebar-sub-header level4"><a href="/pages/8f05cf/#类成员方法的反射-method" class="sidebar-link">类成员方法的反射 Method</a></li><li class="sidebar-sub-header level5"><a href="/pages/8f05cf/#数组与反射" class="sidebar-link">数组与反射</a></li></ul></li></ul></li><li><a href="/pages/767133/" class="sidebar-link">Java集合</a></li><li><a href="/pages/88149c/" class="sidebar-link">Java正则表达式</a></li><li><a href="/pages/2882fd/" class="sidebar-link">Properties的学习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Kotlin</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Dart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C++</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="8498052873"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80" title="分类" data-v-06225672>编程基础</a></li><li data-v-06225672><a href="/categories/?category=Java" title="分类" data-v-06225672>Java</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://fastcv.cc/" target="_blank" title="作者" class="beLink" data-v-06225672>fastcv</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-12-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">Java反射<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p>我们很多时候是不知道一个类的内部是如何实现的，但是我们需要用到它的一些方法，这个时候怎么办咧，我们这个时候就需要用到反射来得到我们需要的东西了。</p> <h3 id="怎么得到class的对象"><a href="#怎么得到class的对象" class="header-anchor">#</a> 怎么得到Class的对象</h3> <p>Class的实例对象就是内存中的一份字节码，或者说内存中的一份字节码对应Class的一个实例对象。现在解释一下什么是字节码？</p> <p>我们常说JAVA编译后，会变成.class文件，而这里所说的字节码就是一个类编译而成的二进制代码，比如：</p> <p>要得到Person对象时，是要先得到Person类的一份字节码（如果JVM中没有，需要先加载，如果有，可以直接返回）;</p> <p>要得到Set对象时，是要先得到Set类的一份字节码;</p> <p>要得到Math对象时，是要先得到Math类的一份字节码。</p> <p>注意：每个类的字节码，在内存中只有一份，每一份字节码就是一个Class的实例对象，比如要得到Person的字节码，可以有下面三种写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Class p=Person.class; 
+“Person.class”就代表Person的字节码，“Person.class”的所属类型的Class
+
+Class.forName(&quot;类的全路径名&quot;);
+
+对象名.getClass();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    String str = &quot;abc&quot;;
+		
+	//first way to get the class
+	Class cls = String.class;
+		
+	//second way to get the class
+	Class cls2 = str.getClass();
+		
+	//thirdly way to get the class
+	Class cls3 = Class.forName(&quot;java.lang.String&quot;);
+		
+	Class cls4 = char.class;
+	System.out.println(&quot;The result:&quot;);
+	System.out.println(cls == cls2);
+	System.out.println(cls == cls3);
+	System.out.println(cls.isPrimitive());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>运行结果为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>The result:
+true
+true
+false
+true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>从结果可以看出，每个类的字节码，在内存中只有一份，无论你用三种方式的哪一种方式去取，得到的都是同一份字节码</p> <h3 id="基本类型的字节码"><a href="#基本类型的字节码" class="header-anchor">#</a> 基本类型的字节码</h3> <p>Java中有八种基本类型，所对应的字节码是基本数据类型的字节码，在程序中，可以种Class的isPrimitive()方法来判断它是不是基本数据类型的字节码。</p> <p>值得一提的是，int[].class这不是基本数据类型的字节码，因为这是数组类型，当调用isArray的时候返回true。</p> <p>说了这么多，还是没有看到关于反射的字眼，现在我们就开始谈谈反射</p> <h2 id="反射深入分析"><a href="#反射深入分析" class="header-anchor">#</a> 反射深入分析</h2> <h3 id="什么是反射"><a href="#什么是反射" class="header-anchor">#</a> 什么是反射？</h3> <p>定义：反射就是把JAVA类中的各种成分映射成映射成相应的JAVA类。</p> <p>我们知道，一个类中可以有成员变量，成员方法，构造方法等信息，这些信息就用相应的类的实例对象来表示。</p> <p>在反射中，有一些类用来表示反射以后类中的成分，比如：Filed，Method，Constructor,Package。</p> <p>比如：System类中，有System.exit(),System.getProperties(),不管你的类中有什么方法，都可以用反射中Method来表示。</p> <p>我们知道，一个类中可以有成员变量，成员方法，构造方法等信息，这些信息就用相应的类的实例对象来表示。</p> <p>在反射中，有一些类用来表示反射以后类中的成分，比如：Filed，Method，Constructor,Package。</p> <p>首先，我们从类的入口出发，开始学习反射</p> <h4 id="类构造函数的反射-constructor"><a href="#类构造函数的反射-constructor" class="header-anchor">#</a> 类构造函数的反射 Constructor</h4> <p>Constructor代表某一个类的构造方法 那么怎么得到一个类的构造方法？ 可以先拿到这个类的CLass实例对象（这个类的字节码），实例对象中有两个方法。 得到类的一个构造函数的方法</p> <p>public Constructor<T> getConstructor(Class&lt;?&gt;... parameterTypes) throws NoSuchMethodException,SecurityException</T></p> <p>通过参数类型，得到想要的构造函数，因为接收的是可变参数，所以可以传多个，比如：想得到String的String（StringBuffer buf）的构造方法，可以这么写：StringString.class.getConstructor(StringBuffer.class);</p> <p>如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    Constructor&lt;String&gt; construct =
+	String.class.getConstructor(StringBuffer.class);
+	Constructor&lt;String&gt; construct1 = String.class.getConstructor(char[].class);
+	String result = construct1.newInstance(new char[]{'a','b','v'});
+	System.out.println(result);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>运行结果</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>abv
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="类成员变量的反射-filed"><a href="#类成员变量的反射-filed" class="header-anchor">#</a> 类成员变量的反射 Filed</h4> <p>如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Point{
+	private int x;
+	public int y;
+	public Point(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+		}
+}
+
+public static void main(String[] args) throws Exception {
+				
+		Point p1=new Point(5, 39);
+		Point p2=new Point(3, 9);
+					&lt;/span&gt;
+		&lt;span style=&quot;font-size:14px;&quot;&gt;//对公有成员变量
+		Field fieldY = p1.getClass().getField(&quot;y&quot;);	
+		int y = (int) fieldY.get(p1);//取对应p1对象的y字段的值，必须要有对象。
+		System.out.println(y);
+				
+		//对私有成员变量，可以进行暴力反射
+		Field fieldX = p1.getClass().getDeclaredField(&quot;x&quot;);
+		fieldX.setAccessible(true);//暴力反射
+		int x = (int) fieldX.get(p1);//取对应p1对象的x字段的值
+		System.out.println(x);				
+		}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>又或者这样</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Person{
+	private String name;
+	private int age ;
+	private String nickName;
+	public Person(String name, int age, String nickName) {
+		 super();
+		this.name = name;
+		this.age = age;
+		this.nickName = nickName;
+		}
+					
+		@Override
+		public String toString() {
+			 return &quot;Person [name=&quot; + name + &quot;, age=&quot; + age + &quot;, nickName=&quot;+ nickName + &quot;]&quot;;
+		}
+}
+
+public static void main(String[] args) throws Exception {
+						
+		Person p=new Person(&quot;zhangsan&quot;, 25, &quot;Amao&quot;);		
+		//得到字节码,通过字节码得到这个类的所有方法
+		Field[] fields = p.getClass().getDeclaredFields();
+			for(Field field:fields){
+			//因为一个类的字节码在内存中只有一份，所以用==比较更专业，此处用==，不用equals（）
+				if(field.getType()==String.class){
+					field.setAccessible(true);//进行暴力反射
+					String oldValue = (String) field.get(p);//获得字段的值
+					String newValue =oldValue.replace(&quot;a&quot;, &quot;A&quot;);
+					field.set(p, newValue);
+					System.out.println(p);
+				}
+			}
+					
+		}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h4 id="类成员方法的反射-method"><a href="#类成员方法的反射-method" class="header-anchor">#</a> 类成员方法的反射 Method</h4> <p>比如：想调用String类中的chatAt(int i)这个方法，该怎么么办呢？ public Method getMethod(String name, Class&lt;?&gt;... parameterTypes)hrows NoSuchMethodException,SecurityException</p> <p>参数说明： name：这个表示方法的名字 parameterTypes：这个参数的作用表示调用哪个方法，因为重载的原因，一个类中同名的方法可能不止一个 对于上面的问题，我们可以这样做。 Method myStrCharAt=String.class.getMethod(&quot;charAt&quot;,int.class);</p> <p>如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class MethodReflect {
+ 
+	public static void main(String[] args) throws Exception{
+		String str=&quot;abcdef&quot;;
+				
+		Method strMethod = str.getClass().getMethod(&quot;charAt&quot;, int.class);
+				
+		//得到方法之后，调用对象str的chatAt方法；
+		char result = (char) strMethod.invoke(str, 1);
+			
+		System.out.println(result);//结果是b
+	}
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>当一个类XXX，我们已经通过反射得到它的方法xxxMethod，那么看下面一行代码 xxxMethod.invoke(null, 1);</p> <p>这表示不知道谁的xxxMethod方法，因为传递的是null，说明调用的这个方法是属于类的，就是静态方法，所以就不需要传递参数了。</p> <h5 id="数组与反射"><a href="#数组与反射" class="header-anchor">#</a> 数组与反射</h5> <p>数组在 Java 语言中是一种特殊的类类型，一个数组的引用可以赋给 Object 引用。观察下面的例子看看数组是怎么工作的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import java.lang.reflect.*;  
+public class Array1 { 
+   public static void main(String args[]) { 
+      try { 
+           Class cls = Class.forName(&quot;java.lang.String&quot;); 
+           Object arr = Array.newInstance(cls, 10); 
+           Array.set(arr, 5, &quot;this is a test&quot;); 
+           String s = (String) Array.get(arr, 5); 
+           System.out.println(s); 
+      } 
+      catch (Throwable e) { 
+           System.err.println(e); 
+      } 
+   } 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>例中创建了 10 个单位长度的 String 数组，为第 5 个位置的字符串赋了值，最后将这个字符串从数组中取得并打印了出来。</p></div></div> <div class="page-slot page-slot-bottom"></br><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="auto"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="7043271566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/17/2022</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/1e535d/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">JavaPoet的学习使用</div></a> <a href="/pages/767133/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Java集合</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/1e535d/" class="prev">JavaPoet的学习使用</a></span> <span class="next"><a href="/pages/767133/">Java集合</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/1e535d/"><div>
+            JavaPoet的学习使用
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/767133/"><div>
+            Java集合
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/88149c/"><div>
+            Java正则表达式
+            <!----></div></a> <span class="date">12-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/CatCatBug/fastcv-blog" title="Star我" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/playlist?id=5161366267" title="有品位的歌单" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>极速cv | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">粤ICP备2022111699号-1</a> </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.e1bc90e6.js" defer></script><script src="/assets/js/2.2dfa729a.js" defer></script><script src="/assets/js/18.140f718a.js" defer></script>
+  </body>
+</html>

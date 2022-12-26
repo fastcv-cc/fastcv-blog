@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java集合 | 极速cv</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-8621788234752924" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924" crossorigin="anonymous"></script>
+    <meta name="description" content="CV操作好，下班就是早。">
+    <meta name="keywords" content="cv,fastcv,个人博客">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#7b074b">
+    
+    <link rel="preload" href="/assets/css/0.styles.d1bed3dc.css" as="style"><link rel="preload" href="/assets/js/app.e1bc90e6.js" as="script"><link rel="preload" href="/assets/js/2.2dfa729a.js" as="script"><link rel="preload" href="/assets/js/19.9d1daaf3.js" as="script"><link rel="prefetch" href="/assets/js/10.35c27e70.js"><link rel="prefetch" href="/assets/js/11.cc577099.js"><link rel="prefetch" href="/assets/js/12.a6e96cf9.js"><link rel="prefetch" href="/assets/js/13.62d81f10.js"><link rel="prefetch" href="/assets/js/14.0634038b.js"><link rel="prefetch" href="/assets/js/15.9b738075.js"><link rel="prefetch" href="/assets/js/16.318f5092.js"><link rel="prefetch" href="/assets/js/17.ef4612a8.js"><link rel="prefetch" href="/assets/js/18.140f718a.js"><link rel="prefetch" href="/assets/js/20.4b6feb7d.js"><link rel="prefetch" href="/assets/js/21.0ed2f2d5.js"><link rel="prefetch" href="/assets/js/22.94066693.js"><link rel="prefetch" href="/assets/js/23.d09c9beb.js"><link rel="prefetch" href="/assets/js/24.1fdf3365.js"><link rel="prefetch" href="/assets/js/25.1b7a2740.js"><link rel="prefetch" href="/assets/js/26.4cfbc8ca.js"><link rel="prefetch" href="/assets/js/27.03291f82.js"><link rel="prefetch" href="/assets/js/28.ee2b7004.js"><link rel="prefetch" href="/assets/js/29.2c8138ce.js"><link rel="prefetch" href="/assets/js/3.4878f8f3.js"><link rel="prefetch" href="/assets/js/30.b1298471.js"><link rel="prefetch" href="/assets/js/31.da38da5f.js"><link rel="prefetch" href="/assets/js/32.3d6eb133.js"><link rel="prefetch" href="/assets/js/33.b6d94bfc.js"><link rel="prefetch" href="/assets/js/34.b6f3263e.js"><link rel="prefetch" href="/assets/js/35.97f4d2e7.js"><link rel="prefetch" href="/assets/js/36.b02e62ca.js"><link rel="prefetch" href="/assets/js/37.d2d7efa3.js"><link rel="prefetch" href="/assets/js/38.6ae288c0.js"><link rel="prefetch" href="/assets/js/39.4fc76e63.js"><link rel="prefetch" href="/assets/js/4.f7f2d443.js"><link rel="prefetch" href="/assets/js/40.284cd7ad.js"><link rel="prefetch" href="/assets/js/41.29df7654.js"><link rel="prefetch" href="/assets/js/42.ba55f3be.js"><link rel="prefetch" href="/assets/js/43.b7195909.js"><link rel="prefetch" href="/assets/js/44.e6098941.js"><link rel="prefetch" href="/assets/js/45.40b8ce81.js"><link rel="prefetch" href="/assets/js/46.f83bf354.js"><link rel="prefetch" href="/assets/js/47.5e550ac5.js"><link rel="prefetch" href="/assets/js/48.c4fb8ab6.js"><link rel="prefetch" href="/assets/js/49.a43055dc.js"><link rel="prefetch" href="/assets/js/5.97835dc3.js"><link rel="prefetch" href="/assets/js/50.9a846d99.js"><link rel="prefetch" href="/assets/js/51.d96445d2.js"><link rel="prefetch" href="/assets/js/52.b569403d.js"><link rel="prefetch" href="/assets/js/53.3ed54ad9.js"><link rel="prefetch" href="/assets/js/54.eb8b3273.js"><link rel="prefetch" href="/assets/js/55.f8d65037.js"><link rel="prefetch" href="/assets/js/56.eb6ad4c4.js"><link rel="prefetch" href="/assets/js/57.b209646e.js"><link rel="prefetch" href="/assets/js/58.b2d0e592.js"><link rel="prefetch" href="/assets/js/59.4af484c7.js"><link rel="prefetch" href="/assets/js/6.866ee092.js"><link rel="prefetch" href="/assets/js/60.671eff60.js"><link rel="prefetch" href="/assets/js/61.400e04cf.js"><link rel="prefetch" href="/assets/js/62.f09e41bc.js"><link rel="prefetch" href="/assets/js/63.90e1dd5a.js"><link rel="prefetch" href="/assets/js/64.5a32ed9a.js"><link rel="prefetch" href="/assets/js/65.8e40013a.js"><link rel="prefetch" href="/assets/js/66.89fc2763.js"><link rel="prefetch" href="/assets/js/67.58b9ef6f.js"><link rel="prefetch" href="/assets/js/68.d01caaf5.js"><link rel="prefetch" href="/assets/js/69.383945cb.js"><link rel="prefetch" href="/assets/js/7.abd87bf8.js"><link rel="prefetch" href="/assets/js/70.a5af60f8.js"><link rel="prefetch" href="/assets/js/71.4c312526.js"><link rel="prefetch" href="/assets/js/72.f250e38c.js"><link rel="prefetch" href="/assets/js/73.d10d7dda.js"><link rel="prefetch" href="/assets/js/74.afa7a2e8.js"><link rel="prefetch" href="/assets/js/75.b52d9fa5.js"><link rel="prefetch" href="/assets/js/76.64654eb8.js"><link rel="prefetch" href="/assets/js/77.b377a166.js"><link rel="prefetch" href="/assets/js/78.f7463089.js"><link rel="prefetch" href="/assets/js/79.051facd4.js"><link rel="prefetch" href="/assets/js/8.ab056171.js"><link rel="prefetch" href="/assets/js/80.16893adb.js"><link rel="prefetch" href="/assets/js/81.4c1bc8e9.js"><link rel="prefetch" href="/assets/js/82.6afcb616.js"><link rel="prefetch" href="/assets/js/83.5324961c.js"><link rel="prefetch" href="/assets/js/84.2eb2e5d2.js"><link rel="prefetch" href="/assets/js/85.31056335.js"><link rel="prefetch" href="/assets/js/86.46ee7480.js"><link rel="prefetch" href="/assets/js/87.ee19866d.js"><link rel="prefetch" href="/assets/js/9.b608f08b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d1bed3dc.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="极速cv" class="logo"> <span class="site-name can-hide">极速cv</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>极速cv</h3> <span>CV操作就是好~</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机组成原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Java</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/1e535d/" class="sidebar-link">JavaPoet的学习使用</a></li><li><a href="/pages/8f05cf/" class="sidebar-link">Java反射</a></li><li><a href="/pages/767133/" aria-current="page" class="active sidebar-link">Java集合</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/767133/#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/767133/#目录" class="sidebar-link">目录</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#list系列" class="sidebar-link">List系列</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#arraylist" class="sidebar-link">ArrayList</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#set系列" class="sidebar-link">Set系列</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#map系列" class="sidebar-link">Map系列</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#什么是-链表散列" class="sidebar-link">什么是 “链表散列”？</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#拉链法与开放地址法相比的缺点" class="sidebar-link">拉链法与开放地址法相比的缺点：</a></li><li class="sidebar-sub-header level5"><a href="/pages/767133/#拉链法的优点" class="sidebar-link">拉链法的优点</a></li><li class="sidebar-sub-header level5"><a href="/pages/767133/#拉链法的缺点" class="sidebar-link">拉链法的缺点</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#关于hasnmap的源码" class="sidebar-link">关于hasnmap的源码</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#容错机制" class="sidebar-link">容错机制</a></li><li class="sidebar-sub-header level5"><a href="/pages/767133/#fail-fast-机制" class="sidebar-link">Fail-Fast 机制</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#hashmap-和-hashtable-区别" class="sidebar-link">HashMap 和 HashTable 区别</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#linkedhashmap" class="sidebar-link">LinkedHashMap</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#hasnset" class="sidebar-link">HasnSet</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#linkedhashset" class="sidebar-link">LinkedHashSet</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#treeset" class="sidebar-link">TreeSet</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#什么是迭代器" class="sidebar-link">什么是迭代器</a></li><li class="sidebar-sub-header level5"><a href="/pages/767133/#java中的iterator功能比较简单-并且只能单向移动" class="sidebar-link">Java中的Iterator功能比较简单，并且只能单向移动：</a></li><li class="sidebar-sub-header level3"><a href="/pages/767133/#源码解读" class="sidebar-link">源码解读</a></li><li class="sidebar-sub-header level4"><a href="/pages/767133/#关于modcount-api解释如下" class="sidebar-link">关于modCount，API解释如下：</a></li><li class="sidebar-sub-header level5"><a href="/pages/767133/#tips-仅仅设置元素的值并不是结构的修改" class="sidebar-link">Tips:仅仅设置元素的值并不是结构的修改</a></li></ul></li></ul></li><li><a href="/pages/88149c/" class="sidebar-link">Java正则表达式</a></li><li><a href="/pages/2882fd/" class="sidebar-link">Properties的学习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Kotlin</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Dart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C++</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="8498052873"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80" title="分类" data-v-06225672>编程基础</a></li><li data-v-06225672><a href="/categories/?category=Java" title="分类" data-v-06225672>Java</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://fastcv.cc/" target="_blank" title="作者" class="beLink" data-v-06225672>fastcv</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-12-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">Java集合<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>几乎所有的java面试都会问到关于集合的问题，事实上，正确的选择集合去存储数据能有效的提升我们程序的执行效率，我们今天就来捋一捋集合中一些常见的集合类它们的实现原理。（结合部分源码）</p> <h3 id="目录"><a href="#目录" class="header-anchor">#</a> 目录</h3> <div class="language-mermaid line-numbers-mode"><pre class="language-mermaid"><code><span class="token keyword">graph</span> TD
+A<span class="token text string">(Object)</span><span class="token arrow operator">--&gt;</span>B<span class="token text string">(Iterator)</span>
+B<span class="token arrow operator">--&gt;</span>C<span class="token text string">(Collection)</span>
+C<span class="token arrow operator">--&gt;</span>E<span class="token text string">(Set)</span>
+E<span class="token arrow operator">--&gt;</span>I<span class="token text string">(HashSet)</span>
+I<span class="token arrow operator">--&gt;</span>K<span class="token text string">(LinkedHashSet)</span>
+E<span class="token arrow operator">--&gt;</span>J<span class="token text string">(TreeSet)</span>
+C<span class="token arrow operator">--&gt;</span>F<span class="token text string">(List)</span>
+F<span class="token arrow operator">--&gt;</span>L<span class="token text string">(ArrayList)</span>
+F<span class="token arrow operator">--&gt;</span>M<span class="token text string">(LinkedList)</span>
+F<span class="token arrow operator">--&gt;</span>N<span class="token text string">(Vector)</span>
+B<span class="token arrow operator">--&gt;</span>D<span class="token text string">(Map)</span>
+D<span class="token arrow operator">--&gt;</span>G<span class="token text string">(HashMap)</span>
+D<span class="token arrow operator">--&gt;</span>P<span class="token text string">(Hashtable)</span>
+G<span class="token arrow operator">--&gt;</span>O<span class="token text string">(LinkedHashMap)</span>
+D<span class="token arrow operator">--&gt;</span>H<span class="token text string">(TreeMap)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>可以看到，集合在java中大体分为三大类：</p> <ul><li>List</li> <li>Set</li> <li>Map</li></ul> <p>那么，接下来的分析，我们就按照以上类别依次分析。</p> <h3 id="list系列"><a href="#list系列" class="header-anchor">#</a> List系列</h3> <p>关于这个系列，相信是大家使用的最多的集合类，下面我们依次来分析一下它们的实现原理。</p> <h4 id="arraylist"><a href="#arraylist" class="header-anchor">#</a> ArrayList</h4> <p>ArrayList内部其实是由数组实现的，我们可以在源码中看到</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>transient Object[] elementData; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>并且，如果我们不给它分配初始大小，它默认大小为0。我们如果我们分配了大小，那么初始大小就是我们分配的大小值。从下面的代码可以看出</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
+
+    transient Object[] elementData;
+    
+    public ArrayList() {
+        this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+    }
+    
+    public ArrayList(int initialCapacity) {
+        if (initialCapacity &gt; 0) {
+            this.elementData = new Object[initialCapacity];
+        } else if (initialCapacity == 0) {
+            this.elementData = EMPTY_ELEMENTDATA;
+        } else {
+            throw new IllegalArgumentException(&quot;Illegal Capacity: &quot;+initialCapacity);
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>初始化完成后，我们一般的操作就是新增元素了，在元素总数不超过数组长度时，都很好理解，直接在添加到数组里面即可。但是，如果长度不够了咋办，比如，我们直接初始化的话，容量大小就等于0了，而且java里面的数组长度一旦写死，就无法修改了，那么官方是怎么做的呢？我们直接根据源码来解析吧。</p> <p>我们先看它的add方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    private static final int DEFAULT_CAPACITY = 10;
+
+    private int size;
+
+    public boolean add(E e) {
+        //传入现在需要的容量大小
+        ensureCapacityInternal(size + 1);  // Increments modCount!!
+        //写入新的元素到数组里面
+        elementData[size++] = e;
+        return true;
+    }
+
+    private void ensureCapacityInternal(int minCapacity) {
+        //判断当前的数组是否为初始化的空数组
+        if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+            //如果是空数组，就将容量修改为10
+            minCapacity = Math.max(DEFAULT_CAPACITY, minCapacity);
+        }
+        ensureExplicitCapacity(minCapacity);
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>我们可以看到，它首先判断是否是初始化的空数组，如果是的就给个默认容量10，然后就到了ensureExplicitCapacity方法，我们接着看</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    private void ensureExplicitCapacity(int minCapacity) {
+        modCount++;
+        // 这里比较我们需要的最小容量和当前容量的大小，如果容量不过，就扩展数组大小
+        if (minCapacity - elementData.length &gt; 0)
+            grow(minCapacity);
+    }
+    
+    private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+    
+    private void grow(int minCapacity) {
+        // 记录旧的数组长度
+        int oldCapacity = elementData.length;
+        //新的容量大小为旧的长度*1.5
+        int newCapacity = oldCapacity + (oldCapacity &gt;&gt; 1);
+        //如果新的容量还是小于我们需要的最小容量，那么，就把新的容量的值修改为我们需要的最小容量
+        if (newCapacity - minCapacity &lt; 0)
+            newCapacity = minCapacity;
+        //如果修改之后的新的容量的大小大于Integer.MAX_VALUE - 8
+        if (newCapacity - MAX_ARRAY_SIZE &gt; 0)
+            //这个方法就是把容量大小改为Integer.MAX_VALUE
+            newCapacity = hugeCapacity(minCapacity);
+        //调用底层的API扩展当前数组的大小
+        elementData = Arrays.copyOf(elementData, newCapacity);
+    }
+    
+    private static int hugeCapacity(int minCapacity) {
+        if (minCapacity &lt; 0) // overflow
+            throw new OutOfMemoryError();
+        return (minCapacity &gt; MAX_ARRAY_SIZE) ?
+            Integer.MAX_VALUE :
+            MAX_ARRAY_SIZE;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>在这个方法里面，我们了解到，每次增加的容量为原来容量的一半，当然，如果接近Int的最大值的时候，我们就需要做一些处理了。</p> <p>了解完新增的原理之后，我们来看看它的删除的原理</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>   //根据元素删除
+   public boolean remove(Object o) {
+        //这里我们需要判断一个这个对象是否为null，需要分开处理，因为null无法调用equals方法
+        if (o == null) {
+            for (int index = 0; index &lt; size; index++)
+                if (elementData[index] == null) {
+                    //直接循环找到第一个符合的元素的下标，然后删除它
+                    fastRemove(index);
+                    return true;
+                }
+        } else {
+            for (int index = 0; index &lt; size; index++)
+                if (o.equals(elementData[index])) {
+                    //直接循环找到第一个符合的元素，然后删除它
+                    fastRemove(index);
+                    return true;
+                }
+        }
+        return false;
+    }
+    
+    //根据下标删除
+    private void fastRemove(int index) {
+        modCount++;
+        //这里得到删除的位置用以判断是否是删除的最后一个元素
+        int numMoved = size - index - 1;
+        if (numMoved &gt; 0)
+            //不是最后一个元素时，将这个下标之后的元素全部往前移一位
+            System.arraycopy(elementData, index+1, elementData, index,
+                             numMoved);
+        //如果是最后一位，直接删除，并释放内存。
+        elementData[--size] = null; // clear to let GC do its work
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>这里可以看到非常细节的一个操作，就是遍历的时候区分null，同时这里也告诉我们，ArrayList是可以存入null值的。</p> <h3 id="set系列"><a href="#set系列" class="header-anchor">#</a> Set系列</h3> <h4 id="map系列"><a href="#map系列" class="header-anchor">#</a> Map系列</h4> <p>分析这个之前，我们需要了解很多一些基础知识。</p> <h4 id="什么是-链表散列"><a href="#什么是-链表散列" class="header-anchor">#</a> 什么是 “链表散列”？</h4> <p>哈希表（Hash table，也叫散列表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把关键码值映射到表中一个位置来访问记录，以加快查找的速度。这个映射函数叫做散列函数，存放记录的数组叫做散列表。</p> <p>记录的存储位置=f(关键字)</p> <p>这里的对应关系f称为散列函数，又称为哈希（Hash函数），采用散列技术将记录存储在一块连续的存储空间中，这块连续存储空间称为散列表或哈希表（Hash table）。</p> <p>哈希表hashtable(key，value) 就是把Key通过一个固定的算法函数既所谓的哈希函数转换成一个整型数字，然后就将该数字对数组长度进行取余，取余结果就当作数组的下标，将value存储在以该数字为下标的数组空间里。（或者：把任意长度的输入（又叫做预映射， pre-image），通过散列算法，变换成固定长度的输出，该输出就是散列值。这种转换是一种压缩映射，也就是，散列值的空间通常远小于输入的空间，不同的输入可能会散列成相同的输出，而不可能从散列值来唯一的确定输入值。简单的说就是一种将任意长度的消息压缩到某一固定长度的消息摘要的函数。）
+而当使用哈希表进行查询的时候，就是再次使用哈希函数将key转换为对应的数组下标，并定位到该空间获取value，如此一来，就可以充分利用到数组的定位性能进行数据定位。</p> <p>数组的特点是：寻址容易，插入和删除困难；</p> <p>而链表的特点是：寻址困难，插入和删除容易。</p> <p>那么我们能不能综合两者的特性，做出一种寻址容易，插入删除也容易的数据结构？答案是肯定的，这就是我们要提起的哈希表，哈希表有多种不同的实现方法，我接下来解释的是最常用的一种方法——拉链法，我们可以理解为“链表的数组”，如图：</p> <p><img src="https://xh-blog.oss-cn-guangzhou.aliyuncs.com/9956726-2fb04e6ef1f7aa8a.png" alt="9956726-2fb04e6ef1f7aa8a"></p> <p>左边很明显是个数组，数组的每个成员包括一个指针，指向一个链表的头，当然这个链表可能为空，也可能元素很多。我们根据元素的一些特征把元素分配到不同的链表中去，也是根据这些特征，找到正确的链表，再从链表中找出这个元素。</p> <p>谈谈我现在的理解，我理解的Hashmap是一个数组带链表，当有key-value进来时，首先得到key的hashcode值，例如：19，然后根据hashmap的容量计算放置的位置，如容量为9，那么计算的结果就为 19%9 = 1，放置的位置就是数组的下标为1的位置。0这个位置是放置key为null的key-value对象。那么现在就会出现一个问题，如果，我们的key为10，经过计算得到10%9 = 1，现在，问题就出现了，位置也是1，那么怎么存放，直接存放会导致之前的数据丢失，但是又不能不存放，这就是典型的hasn冲突了，那么怎么解决咧？我们看看一下几种方式：</p> <ul><li>1.开放定址法：这种方法也称再散列法，其基本思想是：当关键字key的哈希地址p=H（key）出现冲突时，以p为基础，产生另一个哈希地址p1，如果p1仍然冲突，再以p为基础，产生另一个哈希地址p2，…，直到找出一个不冲突的哈希地址pi ，将相应元素存入其中。这种方法有一个通用的再散列函数形式：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Hi=（H（key）+di）% m i=1，2，…，n
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>其中H（key）为哈希函数，m 为表长，di称为增量序列。增量序列的取值方式不同，相应的再散列方式也不同。主要有以下三种：</p> <ul><li>线性探测再散列</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>dii=1，2，3，…，m-1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这种方法的特点是：冲突发生时，顺序查看表中下一单元，直到找出一个空单元或查遍全表。</p> <ul><li>二次探测再散列</li></ul> <p>di=12，-12，22，-22，…，k2，-k2 ( k&lt;=m/2 )</p> <p>这种方法的特点是：冲突发生时，在表的左右进行跳跃式探测，比较灵活。</p> <p>伪随机探测再散列</p> <p>di=伪随机数序列。</p> <p>具体实现时，应建立一个伪随机数发生器，（如i=(i+p) % m），并给定一个随机数做起点。</p> <p>例如，已知哈希表长度m=11，哈希函数为：H（key）= key % 11，则H（47）=3，H（26）=4，H（60）=5，假设下一个关键字为69，则H（69）=3，与47冲突。</p> <p>如果用线性探测再散列处理冲突，下一个哈希地址为H1=（3 + 1）% 11 = 4，仍然冲突，再找下一个哈希地址为H2=（3 + 2）% 11 = 5，还是冲突，继续找下一个哈希地址为H3=（3 + 3）% 11 = 6，此时不再冲突，将69填入5号单元。</p> <p>如果用二次探测再散列处理冲突，下一个哈希地址为H1=（3 + 12）% 11 = 4，仍然冲突，再找下一个哈希地址为H2=（3 - 12）% 11 = 2，此时不再冲突，将69填入2号单元。</p> <p>如果用伪随机探测再散列处理冲突，且伪随机数序列为：2，5，9，……..，则下一个哈希地址为H1=（3 + 2）% 11 = 5，仍然冲突，再找下一个哈希地址为H2=（3 + 5）% 11 = 8，此时不再冲突，将69填入8号单元。</p> <ul><li>2.再哈希法
+这种方法是同时构造多个不同的哈希函数：</li></ul> <p>Hi=RH1（key） i=1，2，…，k</p> <p>当哈希地址Hi=RH1（key）发生冲突时，再计算Hi=RH2（key）……，直到冲突不再产生。这种方法不易产生聚集，但增加了计算时间。</p> <ul><li><p>3.链地址法
+这种方法的基本思想是将所有哈希地址为i的元素构成一个称为同义词链的单链表，并将单链表的头指针存在哈希表的第i个单元中，因而查找、插入和删除主要在同义词链中进行。链地址法适用于经常进行插入和删除的情况。</p></li> <li><p>4.建立公共溢出区
+这种方法的基本思想是：将哈希表分为基本表和溢出表两部分，凡是和基本表发生冲突的元素，一律填入溢出表。</p></li></ul> <h4 id="拉链法与开放地址法相比的缺点"><a href="#拉链法与开放地址法相比的缺点" class="header-anchor">#</a> 拉链法与开放地址法相比的缺点：</h4> <h5 id="拉链法的优点"><a href="#拉链法的优点" class="header-anchor">#</a> 拉链法的优点</h5> <p>与开放定址法相比，拉链法有如下几个优点：</p> <p>①拉链法处理冲突简单，且无堆积现象，即非同义词决不会发生冲突，因此平均查找长度较短；</p> <p>②由于拉链法中各链表上的结点空间是动态申请的，故它更适合于造表前无法确定表长的情况；</p> <p>③开放定址法为减少冲突，要求装填因子α较小，故当结点规模较大时会浪费很多空间。而拉链法中可取α≥1，且结点较大时，拉链法中增加的指针域可忽略不计，因此节省空间；</p> <p>④在用拉链法构造的散列表中，删除结点的操作易于实现。只要简单地删去链表上相应的结点即可。而对开放地址法构造的散列表，删除结点不能简单地将被删结 点的空间置为空，否则将截断在它之后填人散列表的同义词结点的查找路径。这是因为各种开放地址法中，空地址单元(即开放地址)都是查找失败的条件。因此在 用开放地址法处理冲突的散列表上执行删除操作，只能在被删结点上做删除标记，而不能真正删除结点。</p> <h5 id="拉链法的缺点"><a href="#拉链法的缺点" class="header-anchor">#</a> 拉链法的缺点</h5> <p>拉链法的缺点是：指针需要额外的空间，故当结点规模较小时，开放定址法较为节省空间，而若将节省的指针空间用来扩大散列表的规模，可使装填因子变小，这又减少了开放定址法中的冲突，从而提高平均查找速度。</p> <p>结合上面所说的和hashmap的源码，我们重点关注拉链法，我们冲突的元素会放置在对应位置的链表的最后面，这样子，查询的时候，只需要一遍就可以查到结果了。</p> <p>HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。那么问题来了？</p> <h4 id="关于hasnmap的源码"><a href="#关于hasnmap的源码" class="header-anchor">#</a> 关于hasnmap的源码</h4> <p>大概看了一下，估摸着有点难理解，后面再补上</p> <h4 id="容错机制"><a href="#容错机制" class="header-anchor">#</a> 容错机制</h4> <p>因为hashmap是非线程安全的，所以有时候出现多个线程操作的时候，容易导致数据混乱，所以，里面添加了一个容错机制---Fail-Fast 机制</p> <h5 id="fail-fast-机制"><a href="#fail-fast-机制" class="header-anchor">#</a> Fail-Fast 机制</h5> <p>我们知道 java.util.HashMap 不是线程安全的，因此如果在使用迭代器的过程中有其他线程修改了 map，那么将抛出 ConcurrentModificationException，这就是所谓 fail-fast 策略。</p> <p>ail-fast 机制是 java 集合(Collection)中的一种错误机制。 当多个线程对同一个集合的内容进行操作时，就可能会产生 fail-fast 事件。</p> <p>例如：当某一个线程 A 通过 iterator去遍历某集合的过程中，若该集合的内容被其他线程所改变了；那么线程 A 访问集合时，就会抛出 ConcurrentModificationException 异常，产生 fail-fast 事件。</p> <p>这一策略在源码中的实现是通过 modCount 域，modCount 顾名思义就是修改次数，对 HashMap 内容（当然不仅仅是 HashMap 才会有，其他例如 ArrayList 也会）的修改都将增加这个值（大家可以再回头看一下其源码，在很多操作中都有 modCount++ 这句），那么在迭代器初始化过程中会将这个值赋给迭代器的 expectedModCount。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>HashIterator() {
+    expectedModCount = modCount;
+    if (size &gt; 0) { // advance to first entry
+    Entry[] t = table;
+    while (index &lt; t.length &amp;&amp; (next = t[index++]) == null)  
+        ;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>在迭代过程中，判断 modCount 跟 expectedModCount 是否相等，如果不相等就表示已经有其他线程修改了 Map：</p> <p>注意到 modCount 声明为 volatile，保证线程之间修改的可见性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>final Entry&lt;K,V&gt; nextEntry() {
+    if (modCount != expectedModCount)
+        throw new ConcurrentModificationException();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>在 HashMap 的 API 中指出：</p> <p>由所有 HashMap 类的“collection 视图方法”所返回的迭代器都是快速失败的：在迭代器创建之后，如果从结构上对映射进行修改，除非通过迭代器本身的 remove 方法，其他任何时间任何方式的修改，迭代器都将抛出 ConcurrentModificationException。因此，面对并发的修改，迭代器很快就会完全失败，而不冒在将来不确定的时间发生任意不确定行为的风险。</p> <p>注意，迭代器的快速失败行为不能得到保证，一般来说，存在非同步的并发修改时，不可能作出任何坚决的保证。快速失败迭代器尽最大努力抛出 ConcurrentModificationException。因此，编写依赖于此异常的程序的做法是错误的，正确做法是：迭代器的快速失败行为应该仅用于检测程序错误。</p> <p>解决方案
+在上文中也提到，fail-fast 机制，是一种错误检测机制。它只能被用来检测错误，因为 JDK 并不保证 fail-fast 机制一定会发生。若在多线程环境下使用 fail-fast 机制的集合，建议使用“java.util.concurrent 包下的类”去取代“java.util 包下的类”。</p> <p>HashMap 的两种遍历方式
+第一种</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>　　Map map = new HashMap();
+　　Iterator iter = map.entrySet().iterator();
+　　while (iter.hasNext()) {
+　　Map.Entry entry = (Map.Entry) iter.next();
+　　Object key = entry.getKey();
+　　Object val = entry.getValue();
+　　}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>效率高,以后一定要使用此种方式！</p> <p>第二种</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>　　Map map = new HashMap();
+　　Iterator iter = map.keySet().iterator();
+　　while (iter.hasNext()) {
+　　Object key = iter.next();
+　　Object val = map.get(key);
+　　}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>效率低,以后尽量少使用！</p> <h3 id="hashmap-和-hashtable-区别"><a href="#hashmap-和-hashtable-区别" class="header-anchor">#</a> HashMap 和 HashTable 区别</h3> <p>HashMap 不是线程安全的
+HashMap 是 map 接口的实现类，是将键映射到值的对象，其中键和值都是对象，并且不能包含重复键，但可以包含重复值。HashMap 允许 null key 和 null value，而 HashTable 不允许。</p> <p>HashTable 是线程安全 Collection。
+HashMap 是 HashTable 的轻量级实现，他们都完成了Map 接口，主要区别在于 HashMap 允许 null key 和 null value,由于非线程安全，效率上可能高于 Hashtable。</p> <p>区别如下：
+HashMap允许将 null 作为一个 entry 的 key 或者 value，而 Hashtable 不允许。
+HashMap 把 Hashtable 的 contains 方法去掉了，改成 containsValue 和 containsKey。因为 contains 方法容易让人引起误解。
+HashTable 继承自 Dictionary 类，而 HashMap 是 Java1.2 引进的 Map interface 的一个实现。
+HashTable 的方法是 Synchronize 的，而 HashMap 不是，在多个线程访问 Hashtable 时，不需要自己为它的方法实现同步，而 HashMap 就必须为之提供外同步。
+Hashtable 和 HashMap 采用的 hash/rehash 算法都大概一样，所以性能不会有很大的差异。</p> <h3 id="linkedhashmap"><a href="#linkedhashmap" class="header-anchor">#</a> LinkedHashMap</h3> <p>LinkedHashMap 概述
+HashMap 是无序的，HashMap 在 put 的时候是根据 key 的 hashcode 进行 hash 然后放入对应的地方。所以在按照一定顺序 put 进 HashMap 中，然后遍历出 HashMap 的顺序跟 put 的顺序不同（除非在 put 的时候 key 已经按照 hashcode 排序号了，这种几率非常小）</p> <p>JAVA 在 JDK1.4 以后提供了 LinkedHashMap 来帮助我们实现了有序的 HashMap！</p> <p>LinkedHashMap 是 HashMap 的一个子类，它保留插入的顺序，如果需要输出的顺序和输入时的相同，那么就选用 LinkedHashMap。</p> <p>LinkedHashMap 是 Map 接口的哈希表和链接列表实现，具有可预知的迭代顺序。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。</p> <p>LinkedHashMap 实现与 HashMap 的不同之处在于，LinkedHashMap 维护着一个运行于所有条目的双重链接列表。此链接列表定义了迭代顺序，该迭代顺序可以是插入顺序或者是访问顺序。</p> <p>注意，此实现不是同步的。如果多个线程同时访问链接的哈希映射，而其中至少一个线程从结构上修改了该映射，则它必须保持外部同步。</p> <p>根据链表中元素的顺序可以分为：按插入顺序的链表，和按访问顺序(调用 get 方法)的链表。默认是按插入顺序排序，如果指定按访问顺序排序，那么调用get方法后，会将这次访问的元素移至链表尾部，不断访问可以形成按访问顺序排序的链表。</p> <p>对于这个类，我的理解为，在hashmap的基础上，把每次添加的节点封装为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    static class Entry&lt;K,V&gt; extends HashMap.Node&lt;K,V&gt; {
+        Entry&lt;K,V&gt; before, after;
+        Entry(int hash, K key, V value, Node&lt;K,V&gt; next) {
+            super(hash, key, value, next);
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>可以看到，新增了before, after两个位置表示前后的位置，这样子，就实现了双向链表的操作。</p> <p>其它的跟hashmap一样的</p> <h3 id="hasnset"><a href="#hasnset" class="header-anchor">#</a> HasnSet</h3> <p>內部就是使用hashmap实现的，但是，hasnmap是有key-value的，但是我们使用set只有一个参数，为啥列？我们可以看这个</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    private static final Object PRESENT = new Object();
+
+    public boolean add(E e) {
+        return map.put(e, PRESENT)==null;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>我们可以看到，它把我们传入的参数当成key，value就是一个新的Object对象</p> <h3 id="linkedhashset"><a href="#linkedhashset" class="header-anchor">#</a> LinkedHashSet</h3> <p>这个类就是HashSet的子类，但是，HashSet内部是hashmap实现的，如果要一样的话，应该是LinkedHashMap实现的呀，但是，我们看看这个类的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class LinkedHashSet&lt;E&gt;
+    extends HashSet&lt;E&gt;
+    implements Set&lt;E&gt;, Cloneable, java.io.Serializable {
+
+    private static final long serialVersionUID = -2851667679971038690L;
+
+    public LinkedHashSet(int initialCapacity, float loadFactor) {
+        super(initialCapacity, loadFactor, true);
+    }
+
+    public LinkedHashSet(int initialCapacity) {
+        super(initialCapacity, .75f, true);
+    }
+
+    public LinkedHashSet() {
+        super(16, .75f, true);
+    }
+
+    public LinkedHashSet(Collection&lt;? extends E&gt; c) {
+        super(Math.max(2*c.size(), 11), .75f, true);
+        addAll(c);
+    }
+
+    @Override
+    public Spliterator&lt;E&gt; spliterator() {
+        return Spliterators.spliterator(this, Spliterator.DISTINCT | Spliterator.ORDERED);
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>恩？？？？没有LinkedHashMap呀，莫慌，我们点击</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> super(16, .75f, true);  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以看到</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    HashSet(int initialCapacity, float loadFactor, boolean dummy) {
+        map = new LinkedHashMap&lt;&gt;(initialCapacity, loadFactor);
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>是吧，还是和LinkedHsahMap的实现原理一样的</p> <h3 id="treeset"><a href="#treeset" class="header-anchor">#</a> TreeSet</h3> <h3 id="什么是迭代器"><a href="#什么是迭代器" class="header-anchor">#</a> 什么是迭代器</h3> <p>迭代器是一种设计模式，它是一个对象，它可以遍历并选择序列中的对象，而开发人员不需要了解该序列的底层结构。迭代器通常被称为“轻量级”对象，因为创建它的代价小。</p> <h5 id="java中的iterator功能比较简单-并且只能单向移动"><a href="#java中的iterator功能比较简单-并且只能单向移动" class="header-anchor">#</a> Java中的Iterator功能比较简单，并且只能单向移动：</h5> <ul><li><p>(1) 使用方法iterator()要求容器返回一个Iterator。第一次调用Iterator的next()方法时，它返回序列的第一个元素。注意：iterator()方法是java.lang.Iterable接口,被Collection继承。</p></li> <li><p>(2) 使用next()获得序列中的下一个元素。</p></li> <li><p>(3) 使用hasNext()检查序列中是否还有元素。</p></li> <li><p>(4) 使用remove()将迭代器新返回的元素删除。</p></li></ul> <p>举个栗子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class Muster {
+ 
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        list.add(&quot;a&quot;);
+        list.add(&quot;b&quot;);
+        list.add(&quot;c&quot;);
+        Iterator it = list.iterator();
+        while(it.hasNext()){
+            String str = (String) it.next();
+            System.out.println(str);
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>运行结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a
+b
+c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>可以看到，Iterator可以不用管底层数据具体是怎样存储的，都能够通过next()遍历整个List。</p> <p>但是，具体是怎么实现的呢？背后机制究竟如何呢？</p> <h3 id="源码解读"><a href="#源码解读" class="header-anchor">#</a> 源码解读</h3> <p>这里我们来看看Java里AbstractList实现Iterator的源代码：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public abstract class AbstractList&lt;E&gt; extends AbstractCollection&lt;E&gt; implements List&lt;E&gt; { // List接口实现了Collection&lt;E&gt;, Iterable&lt;E&gt; 
+  
+    protected AbstractList() {  
+    }  
+    
+    ...  
+  
+    public Iterator&lt;E&gt; iterator() {  
+    return new Itr();  // 这里返回一个迭代器
+    }  
+  
+    private class Itr implements Iterator&lt;E&gt; {  // 内部类Itr实现迭代器
+       
+    int cursor = 0;  
+    int lastRet = -1;  
+    int expectedModCount = modCount;    
+    public boolean hasNext() {  // 实现hasNext方法
+            return cursor != size();  
+    }  
+  
+    public E next() {  // 实现next方法
+            checkForComodification();  
+       try {  
+       E next = get(cursor);  
+       lastRet = cursor++;  
+       return next;  
+       } catch (IndexOutOfBoundsException e) {  
+        checkForComodification();  
+        throw new NoSuchElementException();  
+       }  
+    }  
+  
+    public void remove() {  // 实现remove方法
+        if (lastRet == -1)  
+        throw new IllegalStateException();  
+            checkForComodification();  
+  
+        try {  
+        AbstractList.this.remove(lastRet);  
+        if (lastRet &lt; cursor)  
+            cursor--;  
+        lastRet = -1;  
+        expectedModCount = modCount;  
+        } catch (IndexOutOfBoundsException e) {  
+        throw new ConcurrentModificationException();  
+        }  
+    }  
+  
+    final void checkForComodification() {  
+        if (modCount != expectedModCount)  
+        throw new ConcurrentModificationException();  
+    }  
+    }  
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><p>可以看到，实现next()是通过get(cursor)，然后cursor++，通过这样实现遍历。</p> <p>这部分代码不难看懂，唯一难懂的是remove操作里涉及到的expectedModCount = modCount;</p> <p>在网上查到说这是集合迭代中的一种“快速失败”机制，这种机制提供迭代过程中集合的安全性。
+从源代码里可以看到增删操作都会使modCount++，通过和expectedModCount的对比，迭代器可以快速的知道迭代过程中是否存在list.add()类似的操作，存在的话快速失败!</p> <p>举个栗子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class Muster {
+ 
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        list.add(&quot;a&quot;);
+        list.add(&quot;b&quot;);
+        list.add(&quot;c&quot;);
+        Iterator it = list.iterator();
+        while(it.hasNext()){
+            String str = (String) it.next();
+            System.out.println(str);
+            list.add(&quot;s&quot;);        //添加一个add方法
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>运行结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a
+Exception in thread &quot;main&quot; java.util.ConcurrentModificationException
+　　at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+　　at java.util.ArrayList$Itr.next(Unknown Source)
+　　at com.hasse.Muster.main(Muster.java:11)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这就会抛出一个下面的异常，迭代终止。</p> <h4 id="关于modcount-api解释如下"><a href="#关于modcount-api解释如下" class="header-anchor">#</a> 关于modCount，API解释如下：</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>The number of times this list has been structurally modified. Structural modifications are those that change the size of the list, or otherwise perturb it in such a fashion that iterations in progress may yield incorrect results.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>也就是说，modCount记录修改此列表的次数：包括改变列表的结构，改变列表的大小，打乱列表的顺序等使正在进行迭代产生错误的结果。</p> <h5 id="tips-仅仅设置元素的值并不是结构的修改"><a href="#tips-仅仅设置元素的值并不是结构的修改" class="header-anchor">#</a> Tips:仅仅设置元素的值并不是结构的修改</h5> <p>我们知道的是ArrayList是线程不安全的，如果在使用迭代器的过程中有其他的线程修改了List就会抛出ConcurrentModificationException，这就是Fail-Fast机制。</p></div></div> <div class="page-slot page-slot-bottom"></br><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="auto"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="7043271566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/17/2022</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/8f05cf/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Java反射</div></a> <a href="/pages/88149c/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Java正则表达式</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/8f05cf/" class="prev">Java反射</a></span> <span class="next"><a href="/pages/88149c/">Java正则表达式</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/1e535d/"><div>
+            JavaPoet的学习使用
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/8f05cf/"><div>
+            Java反射
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/88149c/"><div>
+            Java正则表达式
+            <!----></div></a> <span class="date">12-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/CatCatBug/fastcv-blog" title="Star我" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/playlist?id=5161366267" title="有品位的歌单" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>极速cv | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">粤ICP备2022111699号-1</a> </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.e1bc90e6.js" defer></script><script src="/assets/js/2.2dfa729a.js" defer></script><script src="/assets/js/19.9d1daaf3.js" defer></script>
+  </body>
+</html>

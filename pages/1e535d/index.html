@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaPoet的学习使用 | 极速cv</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-8621788234752924" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924" crossorigin="anonymous"></script>
+    <meta name="description" content="CV操作好，下班就是早。">
+    <meta name="keywords" content="cv,fastcv,个人博客">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#7b074b">
+    
+    <link rel="preload" href="/assets/css/0.styles.d1bed3dc.css" as="style"><link rel="preload" href="/assets/js/app.e1bc90e6.js" as="script"><link rel="preload" href="/assets/js/2.2dfa729a.js" as="script"><link rel="preload" href="/assets/js/17.ef4612a8.js" as="script"><link rel="prefetch" href="/assets/js/10.35c27e70.js"><link rel="prefetch" href="/assets/js/11.cc577099.js"><link rel="prefetch" href="/assets/js/12.a6e96cf9.js"><link rel="prefetch" href="/assets/js/13.62d81f10.js"><link rel="prefetch" href="/assets/js/14.0634038b.js"><link rel="prefetch" href="/assets/js/15.9b738075.js"><link rel="prefetch" href="/assets/js/16.318f5092.js"><link rel="prefetch" href="/assets/js/18.140f718a.js"><link rel="prefetch" href="/assets/js/19.9d1daaf3.js"><link rel="prefetch" href="/assets/js/20.4b6feb7d.js"><link rel="prefetch" href="/assets/js/21.0ed2f2d5.js"><link rel="prefetch" href="/assets/js/22.94066693.js"><link rel="prefetch" href="/assets/js/23.d09c9beb.js"><link rel="prefetch" href="/assets/js/24.1fdf3365.js"><link rel="prefetch" href="/assets/js/25.1b7a2740.js"><link rel="prefetch" href="/assets/js/26.4cfbc8ca.js"><link rel="prefetch" href="/assets/js/27.03291f82.js"><link rel="prefetch" href="/assets/js/28.ee2b7004.js"><link rel="prefetch" href="/assets/js/29.2c8138ce.js"><link rel="prefetch" href="/assets/js/3.4878f8f3.js"><link rel="prefetch" href="/assets/js/30.b1298471.js"><link rel="prefetch" href="/assets/js/31.da38da5f.js"><link rel="prefetch" href="/assets/js/32.3d6eb133.js"><link rel="prefetch" href="/assets/js/33.b6d94bfc.js"><link rel="prefetch" href="/assets/js/34.b6f3263e.js"><link rel="prefetch" href="/assets/js/35.97f4d2e7.js"><link rel="prefetch" href="/assets/js/36.b02e62ca.js"><link rel="prefetch" href="/assets/js/37.d2d7efa3.js"><link rel="prefetch" href="/assets/js/38.6ae288c0.js"><link rel="prefetch" href="/assets/js/39.4fc76e63.js"><link rel="prefetch" href="/assets/js/4.f7f2d443.js"><link rel="prefetch" href="/assets/js/40.284cd7ad.js"><link rel="prefetch" href="/assets/js/41.29df7654.js"><link rel="prefetch" href="/assets/js/42.ba55f3be.js"><link rel="prefetch" href="/assets/js/43.b7195909.js"><link rel="prefetch" href="/assets/js/44.e6098941.js"><link rel="prefetch" href="/assets/js/45.40b8ce81.js"><link rel="prefetch" href="/assets/js/46.f83bf354.js"><link rel="prefetch" href="/assets/js/47.5e550ac5.js"><link rel="prefetch" href="/assets/js/48.c4fb8ab6.js"><link rel="prefetch" href="/assets/js/49.a43055dc.js"><link rel="prefetch" href="/assets/js/5.97835dc3.js"><link rel="prefetch" href="/assets/js/50.9a846d99.js"><link rel="prefetch" href="/assets/js/51.d96445d2.js"><link rel="prefetch" href="/assets/js/52.b569403d.js"><link rel="prefetch" href="/assets/js/53.3ed54ad9.js"><link rel="prefetch" href="/assets/js/54.eb8b3273.js"><link rel="prefetch" href="/assets/js/55.f8d65037.js"><link rel="prefetch" href="/assets/js/56.eb6ad4c4.js"><link rel="prefetch" href="/assets/js/57.b209646e.js"><link rel="prefetch" href="/assets/js/58.b2d0e592.js"><link rel="prefetch" href="/assets/js/59.4af484c7.js"><link rel="prefetch" href="/assets/js/6.866ee092.js"><link rel="prefetch" href="/assets/js/60.671eff60.js"><link rel="prefetch" href="/assets/js/61.400e04cf.js"><link rel="prefetch" href="/assets/js/62.f09e41bc.js"><link rel="prefetch" href="/assets/js/63.90e1dd5a.js"><link rel="prefetch" href="/assets/js/64.5a32ed9a.js"><link rel="prefetch" href="/assets/js/65.8e40013a.js"><link rel="prefetch" href="/assets/js/66.89fc2763.js"><link rel="prefetch" href="/assets/js/67.58b9ef6f.js"><link rel="prefetch" href="/assets/js/68.d01caaf5.js"><link rel="prefetch" href="/assets/js/69.383945cb.js"><link rel="prefetch" href="/assets/js/7.abd87bf8.js"><link rel="prefetch" href="/assets/js/70.a5af60f8.js"><link rel="prefetch" href="/assets/js/71.4c312526.js"><link rel="prefetch" href="/assets/js/72.f250e38c.js"><link rel="prefetch" href="/assets/js/73.d10d7dda.js"><link rel="prefetch" href="/assets/js/74.afa7a2e8.js"><link rel="prefetch" href="/assets/js/75.b52d9fa5.js"><link rel="prefetch" href="/assets/js/76.64654eb8.js"><link rel="prefetch" href="/assets/js/77.b377a166.js"><link rel="prefetch" href="/assets/js/78.f7463089.js"><link rel="prefetch" href="/assets/js/79.051facd4.js"><link rel="prefetch" href="/assets/js/8.ab056171.js"><link rel="prefetch" href="/assets/js/80.16893adb.js"><link rel="prefetch" href="/assets/js/81.4c1bc8e9.js"><link rel="prefetch" href="/assets/js/82.6afcb616.js"><link rel="prefetch" href="/assets/js/83.5324961c.js"><link rel="prefetch" href="/assets/js/84.2eb2e5d2.js"><link rel="prefetch" href="/assets/js/85.31056335.js"><link rel="prefetch" href="/assets/js/86.46ee7480.js"><link rel="prefetch" href="/assets/js/87.ee19866d.js"><link rel="prefetch" href="/assets/js/9.b608f08b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d1bed3dc.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="极速cv" class="logo"> <span class="site-name can-hide">极速cv</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>极速cv</h3> <span>CV操作就是好~</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/article/" class="nav-link">编程基础</a></div><div class="nav-item"><a href="/note/" class="nav-link">Android</a></div><div class="nav-item"><a href="/idea/" class="nav-link">iOS</a></div><div class="nav-item"><a href="/other/" class="nav-link">前端</a></div><div class="nav-item"><a href="/favorites/" class="nav-link">软实力</a></div> <a href="https://github.com/CatCatBug/fastcv-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机组成原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Java</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/1e535d/" aria-current="page" class="active sidebar-link">JavaPoet的学习使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/1e535d/#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/1e535d/#下载" class="sidebar-link">下载</a></li><li class="sidebar-sub-header level3"><a href="/pages/1e535d/#实例代码" class="sidebar-link">实例代码</a></li><li class="sidebar-sub-header level3"><a href="/pages/1e535d/#关键字及作用" class="sidebar-link">关键字及作用</a></li><li class="sidebar-sub-header level3"><a href="/pages/1e535d/#占位符" class="sidebar-link">占位符</a></li><li class="sidebar-sub-header level3"><a href="/pages/1e535d/#官方文档" class="sidebar-link">官方文档</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#花括号" class="sidebar-link">花括号</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#多个花括号" class="sidebar-link">多个花括号</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#占位符-l" class="sidebar-link">占位符$L</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#占位符-s" class="sidebar-link">占位符$S</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#占位符-l-2" class="sidebar-link">占位符$L</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#占位符-n" class="sidebar-link">占位符$N</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#methods" class="sidebar-link">Methods</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#constructors" class="sidebar-link">Constructors</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#parameters" class="sidebar-link">Parameters</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#fields" class="sidebar-link">Fields</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#interfaces" class="sidebar-link">Interfaces</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#enums" class="sidebar-link">Enums</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#anonymous-inner-classes" class="sidebar-link">Anonymous Inner Classes</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#annotations" class="sidebar-link">Annotations</a></li><li class="sidebar-sub-header level4"><a href="/pages/1e535d/#javadoc" class="sidebar-link">Javadoc</a></li></ul></li></ul></li><li><a href="/pages/8f05cf/" class="sidebar-link">Java反射</a></li><li><a href="/pages/767133/" class="sidebar-link">Java集合</a></li><li><a href="/pages/88149c/" class="sidebar-link">Java正则表达式</a></li><li><a href="/pages/2882fd/" class="sidebar-link">Properties的学习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Kotlin</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Dart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C++</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="8498052873"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80" title="分类" data-v-06225672>编程基础</a></li><li data-v-06225672><a href="/categories/?category=Java" title="分类" data-v-06225672>Java</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://fastcv.cc/" target="_blank" title="作者" class="beLink" data-v-06225672>fastcv</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-12-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">JavaPoet的学习使用<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>今日，学习ButterKnife的原理时，了解到了，JavaPoet这个工具，挺有意思的，记录一下。</p> <h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <p>我选用的是下载jar包<a href="https://search.maven.org/remote_content?g=com.squareup&amp;a=javapoet&amp;v=LATEST" target="_blank" rel="noopener noreferrer">下载<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="实例代码"><a href="#实例代码" class="header-anchor">#</a> 实例代码</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class TestOne {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        //构造一个方法
+        MethodSpec main = MethodSpec.methodBuilder(&quot;main&quot;)   //名称
+                .addModifiers(Modifier.PUBLIC,Modifier.STATIC)   //修饰
+                .returns(void.class)   //返回参数
+                .addParameter(String[].class,&quot;args&quot;)   //参数
+                .addStatement(&quot;System.out.println(\&quot;Hello , javaPoet\&quot; + add(10,10))&quot;)   //语句
+                .build();
+
+        MethodSpec add = MethodSpec.methodBuilder(&quot;add&quot;)
+                .addModifiers(Modifier.PUBLIC,Modifier.STATIC)
+                .returns(int.class)
+                .addParameter(int.class,&quot;a&quot;)
+                .addParameter(int.class,&quot;b&quot;)
+                .addStatement(&quot;return a + b&quot;)
+                .build();
+
+        //构造一个类
+        TypeSpec hello = TypeSpec.classBuilder(&quot;Hello&quot;)
+                .addModifiers(Modifier.PUBLIC)
+                .addMethod(main)
+                .addMethod(add)
+                .build();
+
+        //生成一个Java文件
+        JavaFile javaFile = JavaFile.builder(&quot;com.poet.demo&quot;,hello).build();
+
+        //将Java写到当前项目中
+        javaFile.writeTo(System.out);   //打印到命令行中
+
+        File file = new File(&quot;./src/&quot;);
+        if (file.exists()) {
+            file.delete();
+        }
+        javaFile.writeTo(file);
+
+        Thread.sleep(3000);
+
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p>直接看来，这些代码也是很容易让人看懂的，我们还是来了解一下各自的用法吧</p> <h3 id="关键字及作用"><a href="#关键字及作用" class="header-anchor">#</a> 关键字及作用</h3> <table><thead><tr><th style="text-align:center;">类</th> <th style="text-align:center;">含义</th></tr></thead> <tbody><tr><td style="text-align:center;">MethodSpec</td> <td style="text-align:center;">代表一个构造函数或方法声明</td></tr> <tr><td style="text-align:center;">TypeSpec</td> <td style="text-align:center;">代表一个类，接口，或者枚举声明</td></tr> <tr><td style="text-align:center;">FieldSpec</td> <td style="text-align:center;">代表一个成员变量，一个字段声明</td></tr> <tr><td style="text-align:center;">JavaFile</td> <td style="text-align:center;">包含一个顶级类的Java文件</td></tr> <tr><td style="text-align:center;">ParameterSpec</td> <td style="text-align:center;">用来创建参数</td></tr> <tr><td style="text-align:center;">AnnotationSpec</td> <td style="text-align:center;">用来创建注解</td></tr> <tr><td style="text-align:center;">TypeName</td> <td style="text-align:center;">类型，如在添加返回值类型是使用 TypeName.VOID</td></tr> <tr><td style="text-align:center;">ClassName</td> <td style="text-align:center;">用来包装一个类</td></tr></tbody></table> <p>​</p> <h3 id="占位符"><a href="#占位符" class="header-anchor">#</a> 占位符</h3> <table><thead><tr><th style="text-align:center;">占位符</th> <th style="text-align:center;">含义</th></tr></thead> <tbody><tr><td style="text-align:center;">$L</td> <td style="text-align:center;">参数</td></tr> <tr><td style="text-align:center;">$S</td> <td style="text-align:center;">字符串的模板,将指定的字符串替换到$S的地方</td></tr> <tr><td style="text-align:center;">$N</td> <td style="text-align:center;">$N在JavaPoet中代指的是一个名称，例如调用的方法名称，变量名称，这一类存在意思的名称</td></tr> <tr><td style="text-align:center;">$T</td> <td style="text-align:center;">$T 在JavaPoet代指的是TypeName，该模板主要将Class抽象出来，用传入的TypeName指向的Class来代替</td></tr></tbody></table> <h3 id="官方文档"><a href="#官方文档" class="header-anchor">#</a> 官方文档</h3> <h4 id="花括号"><a href="#花括号" class="header-anchor">#</a> 花括号</h4> <p>比如，我们想实现这样的一个类的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void main() {
+  int total = 0;
+  for (int i = 0; i &lt; 10; i++) {
+    total += i;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>按照上面的写法，我们的代码是这样子的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec main = MethodSpec.methodBuilder(&quot;main&quot;)
+    .addCode(&quot;&quot;
+        + &quot;int total = 0;\n&quot;
+        + &quot;for (int i = 0; i &lt; 10; i++) {\n&quot;
+        + &quot;  total += i;\n&quot;
+        + &quot;}\n&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>但是，这样子看起来很很不友好。</p> <p>那么我们可以这么改</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec main = MethodSpec.methodBuilder(&quot;main&quot;)
+    .addStatement(&quot;int total = 0&quot;)
+    .beginControlFlow(&quot;for (int i = 0; i &lt; 10; i++)&quot;)
+    .addStatement(&quot;total += i&quot;)
+    .endControlFlow()
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>所以，我们实现这样子的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int multiply10to20() {
+  int result = 1;
+  for (int i = 10; i &lt; 20; i++) {
+    result = result * i;
+  }
+  return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>只需要这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>private MethodSpec computeRange(String name, int from, int to, String op) {
+  return MethodSpec.methodBuilder(name)
+      .returns(int.class)
+      .addStatement(&quot;int result = 1&quot;)
+      .beginControlFlow(&quot;for (int i = &quot; + from + &quot;; i &lt; &quot; + to + &quot;; i++)&quot;)
+      .addStatement(&quot;result = result &quot; + op + &quot; i&quot;)
+      .endControlFlow()
+      .addStatement(&quot;return result&quot;)
+      .build();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>即可。</p> <h4 id="多个花括号"><a href="#多个花括号" class="header-anchor">#</a> 多个花括号</h4> <p>如果我们要实现如下的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void main() {
+  long now = System.currentTimeMillis();
+  if (System.currentTimeMillis() &lt; now)  {
+    System.out.println(&quot;Time travelling, woo hoo!&quot;);
+  } else if (System.currentTimeMillis() == now) {
+    System.out.println(&quot;Time stood still!&quot;);
+  } else {
+    System.out.println(&quot;Ok, time still moving forward&quot;);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>我们要这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec main = MethodSpec.methodBuilder(&quot;main&quot;)
+    .addStatement(&quot;long now = $T.currentTimeMillis()&quot;, System.class)
+    .beginControlFlow(&quot;if ($T.currentTimeMillis() &lt; now)&quot;, System.class)
+    .addStatement(&quot;$T.out.println($S)&quot;, System.class, &quot;Time travelling, woo hoo!&quot;)
+    .nextControlFlow(&quot;else if ($T.currentTimeMillis() == now)&quot;, System.class)
+    .addStatement(&quot;$T.out.println($S)&quot;, System.class, &quot;Time stood still!&quot;)
+    .nextControlFlow(&quot;else&quot;)
+    .addStatement(&quot;$T.out.println($S)&quot;, System.class, &quot;Ok, time still moving forward&quot;)
+    .endControlFlow()
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>那么，实现</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void main() {
+  try {
+    throw new Exception(&quot;Failed&quot;);
+  } catch (Exception e) {
+    throw new RuntimeException(e);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>就可以这么写了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec main = MethodSpec.methodBuilder(&quot;main&quot;)
+    .beginControlFlow(&quot;try&quot;)
+    .addStatement(&quot;throw new Exception($S)&quot;, &quot;Failed&quot;)
+    .nextControlFlow(&quot;catch ($T e)&quot;, Exception.class)
+    .addStatement(&quot;throw new $T(e)&quot;, RuntimeException.class)
+    .endControlFlow()
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="占位符-l"><a href="#占位符-l" class="header-anchor">#</a> 占位符$L</h4> <p>如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>private MethodSpec computeRange(String name, int from, int to, String op) {
+  return MethodSpec.methodBuilder(name)
+      .returns(int.class)
+      .addStatement(&quot;int result = 0&quot;)
+      .beginControlFlow(&quot;for (int i = $L; i &lt; $L; i++)&quot;, from, to)
+      .addStatement(&quot;result = result $L i&quot;, op)
+      .endControlFlow()
+      .addStatement(&quot;return result&quot;)
+      .build();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="占位符-s"><a href="#占位符-s" class="header-anchor">#</a> 占位符$S</h4> <p>如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public static void main(String[] args) throws Exception {
+  TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+      .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
+      .addMethod(whatsMyName(&quot;slimShady&quot;))
+      .addMethod(whatsMyName(&quot;eminem&quot;))
+      .addMethod(whatsMyName(&quot;marshallMathers&quot;))
+      .build();
+
+  JavaFile javaFile = JavaFile.builder(&quot;com.example.helloworld&quot;, helloWorld)
+      .build();
+
+  javaFile.writeTo(System.out);
+}
+
+private static MethodSpec whatsMyName(String name) {
+  return MethodSpec.methodBuilder(name)
+      .returns(String.class)
+      .addStatement(&quot;return $S&quot;, name)
+      .build();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>生成的代码为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public final class HelloWorld {
+  String slimShady() {
+    return &quot;slimShady&quot;;
+  }
+
+  String eminem() {
+    return &quot;eminem&quot;;
+  }
+
+  String marshallMathers() {
+    return &quot;marshallMathers&quot;;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h4 id="占位符-l-2"><a href="#占位符-l-2" class="header-anchor">#</a> 占位符$L</h4> <p>如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec today = MethodSpec.methodBuilder(&quot;today&quot;)
+    .returns(Date.class)
+    .addStatement(&quot;return new $T()&quot;, Date.class)
+    .build();
+
+TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
+    .addMethod(today)
+    .build();
+
+JavaFile javaFile = JavaFile.builder(&quot;com.example.helloworld&quot;, helloWorld)
+    .build();
+
+javaFile.writeTo(System.out);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>生成的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.example.helloworld;
+
+import java.util.Date;
+
+public final class HelloWorld {
+  Date today() {
+    return new Date();
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>此处我们返回的是java环境中有的类，如果返回的不是已经运行的类，我们需要这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ClassName hoverboard = ClassName.get(&quot;com.mattel&quot;, &quot;Hoverboard&quot;);
+
+MethodSpec today = MethodSpec.methodBuilder(&quot;tomorrow&quot;)
+    .returns(hoverboard)
+    .addStatement(&quot;return new $T()&quot;, hoverboard)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>生成的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.example.helloworld;
+
+import com.mattel.Hoverboard;
+
+public final class HelloWorld {
+  Hoverboard tomorrow() {
+    return new Hoverboard();
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>也可以表示多个</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ClassName hoverboard = ClassName.get(&quot;com.mattel&quot;, &quot;Hoverboard&quot;);
+ClassName list = ClassName.get(&quot;java.util&quot;, &quot;List&quot;);
+ClassName arrayList = ClassName.get(&quot;java.util&quot;, &quot;ArrayList&quot;);
+TypeName listOfHoverboards = ParameterizedTypeName.get(list, hoverboard);
+
+MethodSpec beyond = MethodSpec.methodBuilder(&quot;beyond&quot;)
+    .returns(listOfHoverboards)
+    .addStatement(&quot;$T result = new $T&lt;&gt;()&quot;, listOfHoverboards, arrayList)
+    .addStatement(&quot;result.add(new $T())&quot;, hoverboard)
+    .addStatement(&quot;result.add(new $T())&quot;, hoverboard)
+    .addStatement(&quot;result.add(new $T())&quot;, hoverboard)
+    .addStatement(&quot;return result&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>生成的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.example.helloworld;
+
+import com.mattel.Hoverboard;
+import java.util.ArrayList;
+import java.util.List;
+
+public final class HelloWorld {
+  List&lt;Hoverboard&gt; beyond() {
+    List&lt;Hoverboard&gt; result = new ArrayList&lt;&gt;();
+    result.add(new Hoverboard());
+    result.add(new Hoverboard());
+    result.add(new Hoverboard());
+    return result;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>静态导入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ClassName namedBoards = ClassName.get(&quot;com.mattel&quot;, &quot;Hoverboard&quot;, &quot;Boards&quot;);
+
+MethodSpec beyond = MethodSpec.methodBuilder(&quot;beyond&quot;)
+    .returns(listOfHoverboards)
+    .addStatement(&quot;$T result = new $T&lt;&gt;()&quot;, listOfHoverboards, arrayList)
+    .addStatement(&quot;result.add($T.createNimbus(2000))&quot;, hoverboard)
+    .addStatement(&quot;result.add($T.createNimbus(\&quot;2001\&quot;))&quot;, hoverboard)
+    .addStatement(&quot;result.add($T.createNimbus($T.THUNDERBOLT))&quot;, hoverboard, namedBoards)
+    .addStatement(&quot;$T.sort(result)&quot;, Collections.class)
+    .addStatement(&quot;return result.isEmpty() ? $T.emptyList() : result&quot;, Collections.class)
+    .build();
+
+TypeSpec hello = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addMethod(beyond)
+    .build();
+
+JavaFile.builder(&quot;com.example.helloworld&quot;, hello)
+    .addStaticImport(hoverboard, &quot;createNimbus&quot;)
+    .addStaticImport(namedBoards, &quot;*&quot;)
+    .addStaticImport(Collections.class, &quot;*&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>生成的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.example.helloworld;
+
+import static com.mattel.Hoverboard.Boards.*;
+import static com.mattel.Hoverboard.createNimbus;
+import static java.util.Collections.*;
+
+import com.mattel.Hoverboard;
+import java.util.ArrayList;
+import java.util.List;
+
+class HelloWorld {
+  List&lt;Hoverboard&gt; beyond() {
+    List&lt;Hoverboard&gt; result = new ArrayList&lt;&gt;();
+    result.add(createNimbus(2000));
+    result.add(createNimbus(&quot;2001&quot;));
+    result.add(createNimbus(THUNDERBOLT));
+    sort(result);
+    return result.isEmpty() ? emptyList() : result;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h4 id="占位符-n"><a href="#占位符-n" class="header-anchor">#</a> 占位符$N</h4> <p>我们要生成如下的代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public String byteToHex(int b) {
+  char[] result = new char[2];
+  result[0] = hexDigit((b &gt;&gt;&gt; 4) &amp; 0xf);
+  result[1] = hexDigit(b &amp; 0xf);
+  return new String(result);
+}
+
+public char hexDigit(int i) {
+  return (char) (i &lt; 10 ? i + '0' : i - 10 + 'a');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>我们可以这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec hexDigit = MethodSpec.methodBuilder(&quot;hexDigit&quot;)
+    .addParameter(int.class, &quot;i&quot;)
+    .returns(char.class)
+    .addStatement(&quot;return (char) (i &lt; 10 ? i + '0' : i - 10 + 'a')&quot;)
+    .build();
+
+MethodSpec byteToHex = MethodSpec.methodBuilder(&quot;byteToHex&quot;)
+    .addParameter(int.class, &quot;b&quot;)
+    .returns(String.class)
+    .addStatement(&quot;char[] result = new char[2]&quot;)
+    .addStatement(&quot;result[0] = $N((b &gt;&gt;&gt; 4) &amp; 0xf)&quot;, hexDigit)
+    .addStatement(&quot;result[1] = $N(b &amp; 0xf)&quot;, hexDigit)
+    .addStatement(&quot;return new String(result)&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="methods"><a href="#methods" class="header-anchor">#</a> Methods</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec flux = MethodSpec.methodBuilder(&quot;flux&quot;)
+    .addModifiers(Modifier.ABSTRACT, Modifier.PROTECTED)
+    .build();
+
+TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+    .addMethod(flux)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public abstract class HelloWorld {
+  protected abstract void flux();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="constructors"><a href="#constructors" class="header-anchor">#</a> Constructors</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec flux = MethodSpec.constructorBuilder()
+    .addModifiers(Modifier.PUBLIC)
+    .addParameter(String.class, &quot;greeting&quot;)
+    .addStatement(&quot;this.$N = $N&quot;, &quot;greeting&quot;, &quot;greeting&quot;)
+    .build();
+
+TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addModifiers(Modifier.PUBLIC)
+    .addField(String.class, &quot;greeting&quot;, Modifier.PRIVATE, Modifier.FINAL)
+    .addMethod(flux)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class HelloWorld {
+  private final String greeting;
+
+  public HelloWorld(String greeting) {
+    this.greeting = greeting;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="parameters"><a href="#parameters" class="header-anchor">#</a> Parameters</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ParameterSpec android = ParameterSpec.builder(String.class, &quot;android&quot;)
+    .addModifiers(Modifier.FINAL)
+    .build();
+
+MethodSpec welcomeOverlords = MethodSpec.methodBuilder(&quot;welcomeOverlords&quot;)
+    .addParameter(android)
+    .addParameter(String.class, &quot;robot&quot;, Modifier.FINAL)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void welcomeOverlords(final String android, final String robot) {
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="fields"><a href="#fields" class="header-anchor">#</a> Fields</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>FieldSpec android = FieldSpec.builder(String.class, &quot;android&quot;)
+    .addModifiers(Modifier.PRIVATE, Modifier.FINAL)
+    .build();
+
+TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addModifiers(Modifier.PUBLIC)
+    .addField(android)
+    .addField(String.class, &quot;robot&quot;, Modifier.PRIVATE, Modifier.FINAL)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class HelloWorld {
+  private final String android;
+
+  private final String robot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>还有</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>FieldSpec android = FieldSpec.builder(String.class, &quot;android&quot;)
+    .addModifiers(Modifier.PRIVATE, Modifier.FINAL)
+    .initializer(&quot;$S + $L&quot;, &quot;Lollipop v.&quot;, 5.0d)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>private final String android = &quot;Lollipop v.&quot; + 5.0;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="interfaces"><a href="#interfaces" class="header-anchor">#</a> Interfaces</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>TypeSpec helloWorld = TypeSpec.interfaceBuilder(&quot;HelloWorld&quot;)
+    .addModifiers(Modifier.PUBLIC)
+    .addField(FieldSpec.builder(String.class, &quot;ONLY_THING_THAT_IS_CONSTANT&quot;)
+        .addModifiers(Modifier.PUBLIC, Modifier.STATIC, Modifier.FINAL)
+        .initializer(&quot;$S&quot;, &quot;change&quot;)
+        .build())
+    .addMethod(MethodSpec.methodBuilder(&quot;beep&quot;)
+        .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+        .build())
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public interface HelloWorld {
+  String ONLY_THING_THAT_IS_CONSTANT = &quot;change&quot;;
+
+  void beep();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="enums"><a href="#enums" class="header-anchor">#</a> Enums</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>TypeSpec helloWorld = TypeSpec.enumBuilder(&quot;Roshambo&quot;)
+    .addModifiers(Modifier.PUBLIC)
+    .addEnumConstant(&quot;ROCK&quot;)
+    .addEnumConstant(&quot;SCISSORS&quot;)
+    .addEnumConstant(&quot;PAPER&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public enum Roshambo {
+  ROCK,
+
+  SCISSORS,
+
+  PAPER
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>TypeSpec helloWorld = TypeSpec.enumBuilder(&quot;Roshambo&quot;)
+    .addModifiers(Modifier.PUBLIC)
+    .addEnumConstant(&quot;ROCK&quot;, TypeSpec.anonymousClassBuilder(&quot;$S&quot;, &quot;fist&quot;)
+        .addMethod(MethodSpec.methodBuilder(&quot;toString&quot;)
+            .addAnnotation(Override.class)
+            .addModifiers(Modifier.PUBLIC)
+            .addStatement(&quot;return $S&quot;, &quot;avalanche!&quot;)
+            .returns(String.class)
+            .build())
+        .build())
+    .addEnumConstant(&quot;SCISSORS&quot;, TypeSpec.anonymousClassBuilder(&quot;$S&quot;, &quot;peace&quot;)
+        .build())
+    .addEnumConstant(&quot;PAPER&quot;, TypeSpec.anonymousClassBuilder(&quot;$S&quot;, &quot;flat&quot;)
+        .build())
+    .addField(String.class, &quot;handsign&quot;, Modifier.PRIVATE, Modifier.FINAL)
+    .addMethod(MethodSpec.constructorBuilder()
+        .addParameter(String.class, &quot;handsign&quot;)
+        .addStatement(&quot;this.$N = $N&quot;, &quot;handsign&quot;, &quot;handsign&quot;)
+        .build())
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public enum Roshambo {
+  ROCK(&quot;fist&quot;) {
+    @Override
+    public String toString() {
+      return &quot;avalanche!&quot;;
+    }
+  },
+
+  SCISSORS(&quot;peace&quot;),
+
+  PAPER(&quot;flat&quot;);
+
+  private final String handsign;
+
+  Roshambo(String handsign) {
+    this.handsign = handsign;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h4 id="anonymous-inner-classes"><a href="#anonymous-inner-classes" class="header-anchor">#</a> Anonymous Inner Classes</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>TypeSpec comparator = TypeSpec.anonymousClassBuilder(&quot;&quot;)
+    .addSuperinterface(ParameterizedTypeName.get(Comparator.class, String.class))
+    .addMethod(MethodSpec.methodBuilder(&quot;compare&quot;)
+        .addAnnotation(Override.class)
+        .addModifiers(Modifier.PUBLIC)
+        .addParameter(String.class, &quot;a&quot;)
+        .addParameter(String.class, &quot;b&quot;)
+        .returns(int.class)
+        .addStatement(&quot;return $N.length() - $N.length()&quot;, &quot;a&quot;, &quot;b&quot;)
+        .build())
+    .build();
+
+TypeSpec helloWorld = TypeSpec.classBuilder(&quot;HelloWorld&quot;)
+    .addMethod(MethodSpec.methodBuilder(&quot;sortByLength&quot;)
+        .addParameter(ParameterizedTypeName.get(List.class, String.class), &quot;strings&quot;)
+        .addStatement(&quot;$T.sort($N, $L)&quot;, Collections.class, &quot;strings&quot;, comparator)
+        .build())
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void sortByLength(List&lt;String&gt; strings) {
+  Collections.sort(strings, new Comparator&lt;String&gt;() {
+    @Override
+    public int compare(String a, String b) {
+      return a.length() - b.length();
+    }
+  });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="annotations"><a href="#annotations" class="header-anchor">#</a> Annotations</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec toString = MethodSpec.methodBuilder(&quot;toString&quot;)
+    .addAnnotation(Override.class)
+    .returns(String.class)
+    .addModifiers(Modifier.PUBLIC)
+    .addStatement(&quot;return $S&quot;, &quot;Hoverboard&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  @Override
+  public String toString() {
+    return &quot;Hoverboard&quot;;
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>还有</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec logRecord = MethodSpec.methodBuilder(&quot;recordEvent&quot;)
+    .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+    .addAnnotation(AnnotationSpec.builder(Headers.class)
+        .addMember(&quot;accept&quot;, &quot;$S&quot;, &quot;application/json; charset=utf-8&quot;)
+        .addMember(&quot;userAgent&quot;, &quot;$S&quot;, &quot;Square Cash&quot;)
+        .build())
+    .addParameter(LogRecord.class, &quot;logRecord&quot;)
+    .returns(LogReceipt.class)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Headers(
+    accept = &quot;application/json; charset=utf-8&quot;,
+    userAgent = &quot;Square Cash&quot;
+)
+LogReceipt recordEvent(LogRecord logRecord);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec logRecord = MethodSpec.methodBuilder(&quot;recordEvent&quot;)
+    .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+    .addAnnotation(AnnotationSpec.builder(HeaderList.class)
+        .addMember(&quot;value&quot;, &quot;$L&quot;, AnnotationSpec.builder(Header.class)
+            .addMember(&quot;name&quot;, &quot;$S&quot;, &quot;Accept&quot;)
+            .addMember(&quot;value&quot;, &quot;$S&quot;, &quot;application/json; charset=utf-8&quot;)
+            .build())
+        .addMember(&quot;value&quot;, &quot;$L&quot;, AnnotationSpec.builder(Header.class)
+            .addMember(&quot;name&quot;, &quot;$S&quot;, &quot;User-Agent&quot;)
+            .addMember(&quot;value&quot;, &quot;$S&quot;, &quot;Square Cash&quot;)
+            .build())
+        .build())
+    .addParameter(LogRecord.class, &quot;logRecord&quot;)
+    .returns(LogReceipt.class)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@HeaderList({
+    @Header(name = &quot;Accept&quot;, value = &quot;application/json; charset=utf-8&quot;),
+    @Header(name = &quot;User-Agent&quot;, value = &quot;Square Cash&quot;)
+})
+LogReceipt recordEvent(LogRecord logRecord);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="javadoc"><a href="#javadoc" class="header-anchor">#</a> Javadoc</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>MethodSpec dismiss = MethodSpec.methodBuilder(&quot;dismiss&quot;)
+    .addJavadoc(&quot;Hides {@code message} from the caller's history. Other\n&quot;
+        + &quot;participants in the conversation will continue to see the\n&quot;
+        + &quot;message in their own history unless they also delete it.\n&quot;)
+    .addJavadoc(&quot;\n&quot;)
+    .addJavadoc(&quot;&lt;p&gt;Use {@link #delete($T)} to delete the entire\n&quot;
+        + &quot;conversation for all participants.\n&quot;, Conversation.class)
+    .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+    .addParameter(Message.class, &quot;message&quot;)
+    .build();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>生成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  /**
+   * Hides {@code message} from the caller's history. Other
+   * participants in the conversation will continue to see the
+   * message in their own history unless they also delete it.
+   *
+   * &lt;p&gt;Use {@link #delete(Conversation)} to delete the entire
+   * conversation for all participants.
+   */
+  void dismiss(Message message);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div></div> <div class="page-slot page-slot-bottom"></br><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="auto"
+     data-ad-client="ca-pub-8621788234752924"
+     data-ad-slot="7043271566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/17/2022</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/586d36/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">测试</div></a> <a href="/pages/8f05cf/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Java反射</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/586d36/" class="prev">测试</a></span> <span class="next"><a href="/pages/8f05cf/">Java反射</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/8f05cf/"><div>
+            Java反射
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/767133/"><div>
+            Java集合
+            <!----></div></a> <span class="date">12-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/88149c/"><div>
+            Java正则表达式
+            <!----></div></a> <span class="date">12-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/CatCatBug/fastcv-blog" title="Star我" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/playlist?id=5161366267" title="有品位的歌单" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>极速cv | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">粤ICP备2022111699号-1</a> </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.e1bc90e6.js" defer></script><script src="/assets/js/2.2dfa729a.js" defer></script><script src="/assets/js/17.ef4612a8.js" defer></script>
+  </body>
+</html>
